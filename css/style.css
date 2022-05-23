@@ -1,0 +1,549 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 12px !important;
+    font-family: 'Nanum Myeongjo', 'Nanum Gothic', 'helvetica', serif, 'AppleGothic', sans-serif;;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+fieldset, img {
+    border: 0;
+    vertical-align: middle;
+}
+
+img {
+    width: 100%;
+}
+
+address, caption, cite, code, dfn, em, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: normal;
+}
+
+hr {
+    display: none;
+    height: 0
+}
+
+ul, ol, li, dd, dt {
+    list-style: none
+}
+
+button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    display: block
+}
+
+ul {
+    display: inline-block
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+}
+
+input[type="radio"] {
+    margin: 0;
+    vertical-align: middle;
+    border: 0 solid #fff;
+}
+
+input[type="checkbox"] {
+    border-radius: 0;
+    background: #fff;
+}
+
+header, section, article, aside, nav, footer {
+    display: block;
+}
+
+hr, caption, legend {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 0;
+}
+
+label {
+    vertical-align: middle;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* LightMode일 때 사용되는 컬러 */
+body {
+    background: #fff;
+    color: #000;
+}
+
+/* DarkMode일 때 사용되는 컬러 */
+/*@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #ddd;
+    }
+}*/
+
+
+
+.wrapper {
+    background: url(../images/bg.jpeg);
+    background-size: cover;
+}
+
+.contents .cnt-tit {
+    text-align: center;
+    position: relative;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #483a33;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.contents .cnt-tit:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -3.75rem;
+    width: 7.5rem;
+    height: 1px;
+    background: #d4bda2;
+}
+
+.call-icon {
+    background: url("../images/icon_tel.png") no-repeat center;
+    background-size: 50%;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.ps-txt {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*start*/
+.contents.start {
+    padding: 70px 0;
+}
+
+.contents.start .txt-cnt {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Nanum Myeongjo', sans-serif !important;
+}
+
+.contents.start .main-tit {
+    width: 100%;
+    font-size: 25px;
+    line-height: 1.1;
+    color: #483a33;
+    padding-bottom: 40px;
+}
+
+.contents.start .info {
+    position: relative;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 0.688rem;
+    padding-bottom: 0.688rem;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #483a33;
+}
+
+.contents.start .info:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 7.5rem;
+    height: 1px;
+    background: #d4bda2;
+}
+
+.contents.start .name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.125rem;
+}
+
+.contents.start .name span {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.125rem;
+    padding: 0 3px;
+}
+
+
+/*invitation*/
+.contents.invitation .txt-cnt {
+    font-size: 14px;
+    text-align: center;
+    line-height: 2;
+    font-family: 'Nanum Myeongjo', sans-serif;
+}
+
+
+.contents.invitation .txt-cnt.top {
+    padding-bottom: 50px;
+}
+
+.contents.invitation .txt-cnt.btm {
+    position: relative;
+    padding: 50px 0 30px 0;
+}
+
+.contents.invitation .txt-cnt .sm-txt {
+    font-size: 12px;
+}
+
+.contents.invitation .txt-cnt .m-txt {
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+.contents.invitation .txt-cnt.btm:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    width: 1px;
+    height: 1.875rem;
+    background: #999;
+}
+
+/*calling*/
+.contents.calling .img-cnt {
+    position: relative;
+    background-color: #d4bda2;
+    height: 100px;
+}
+
+
+.contents.calling .img-cnt p {
+    text-align: center;
+    color: #ffffff;
+    line-height: 100px;
+    letter-spacing: 10px;
+    font-size: 12px;
+    font-weight: 200;
+
+}
+
+.contents.calling .couple {
+    text-align: center;
+    padding: 35px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.250rem;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+.contents.calling .couple .call-cnt a {
+    display: inline-block;
+}
+
+.contents.calling .couple .call-cnt span {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.contents.calling .couple .call-cnt:last-child {
+    padding-top: 13px;
+}
+
+.contents.calling .call-icon.groom {
+    background-color: #a3dad9;
+}
+
+.contents.calling .call-icon.bride {
+    background-color: #fbc9e2;
+}
+
+.contents.calling .parents {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+.contents.calling .parents .calling-parents {
+    background: #f0e8e0;
+    color: #ba8f58;
+    padding: 12px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.contents.calling .parents .tit {
+    font-size: 13px !important;
+}
+
+.contents.calling .parents .item {
+    margin-top: 20px;
+}
+
+.contents.calling .parents .name-cnt {
+    padding-bottom: 8px;
+}
+
+.contents.calling .parents .name-cnt > span {
+    color: #999999;
+    font-size: 12px;
+}
+
+.contents.calling .parents .name-cnt strong {
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 3px;
+}
+
+
+.contents.calling .parents .call-cnt {
+    padding: 30px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.contents.calling .parents .grid-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contents.calling .parents .tit {
+    font-size: 13px;
+}
+
+.contents.calling .parents .groom .tit {
+    color: #7cd7d6;
+}
+
+.contents.calling .parents .bride .tit {
+    color: #fba8d1;
+}
+
+/*gallery*/
+.contents.gallery {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contents.gallery .gallery-wrap {
+    height: 100%;
+    margin-top: 20px;
+}
+
+.contents.gallery .grid-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.contents.gallery .grid-item {
+
+}
+
+.contents.gallery .grid-wrap .grid-item a {
+    width: 100%;
+    display: inline-block;
+}
+
+.contents.location {
+    margin-top: 100px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.contents.location .address {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.contents.location .address .left .tit {
+    font-size: 15px;
+}
+
+.contents.location .address .left .detail {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #999999;
+    line-height: 1.4;
+}
+
+.contents.location .address .right {
+    text-align: right;
+    align-self: center;
+}
+
+.contents.location .call-icon.hall {
+    background-color: #ba8f58;
+}
+
+.contents.location .map-icons-cnt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 15px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.contents.location .map-icon a {
+    display: inline-block;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: 100%;
+}
+
+
+.contents.location .map-icon a.t-map {
+    background-image: url("../images/location_tmap.png");
+}
+
+.contents.location .map-icon a.kakao-nav {
+    background-image: url("../images/location_kakaonavi.png");
+}
+
+.contents.location .map-icon a.naver-map {
+    background-image: url("../images/location_navermap.png");
+}
+
+.contents.location .map-icon a.kakao-map {
+    background-image: url("../images/location_kakaomap.png");
+}
+
+.contents.location .map-icon p {
+    padding-top: 6px;
+}
+
+.contents.location .transportation {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.contents.location .transportation .list {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contents.location .transportation p {
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.contents.location .transportation .detail {
+    font-size: 12px;
+    color: #999999;
+}
+
+/*menu*/
+.contents.menu {
+    padding: 50px 0;
+}
+
+.contents.menu .grid-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+/*calendar*/
+.contents.calendar {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/*account*/
+.contents.account {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contents.account .main-tit {
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #777;
+}
+
+.contents.account .account-list {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+}
+
+.contents.account .account-list div:first-child {
+    margin-bottom: 20px;
+}
+
+.contents.account .account-list a {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px 50px;
+    border-radius: 2.5rem;
+    color: #ffffff;
+}
+
+.contents.account .account-list a.groom {
+    background-color: #a3dad9;
+}
+
+.contents.account .account-list a.bride {
+    background-color: #fbc9e2;
+}
+
+/*footer*/
+.footer .contents {
+    padding: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer .btm {
+    background-color: #d4bda2;
+    height: 93px;
+}
+
+
