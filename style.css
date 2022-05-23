@@ -255,7 +255,7 @@ body {
     color: #ffffff;
     line-height: 100px;
     letter-spacing: 10px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 200;
 
 }
@@ -264,7 +264,7 @@ body {
     text-align: center;
     padding: 35px;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 2.250rem;
     letter-spacing: 2px;
@@ -272,7 +272,7 @@ body {
 }
 
 .contents.calling .couple .call-cnt span {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .contents.calling .couple .call-cnt:last-child {
@@ -296,12 +296,12 @@ body {
     background: #f0e8e0;
     color: #ba8f58;
     padding: 12px 0;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
 }
 
 .contents.calling .parents .tit {
-    font-size: 12px!important;
+    font-size: 13px!important;
 }
 
 .contents.calling .parents .item {
@@ -314,11 +314,11 @@ body {
 
 .contents.calling .parents .name-cnt > span {
     color: #999999;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .contents.calling .parents .name-cnt strong {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     padding-left: 3px;
 }
