@@ -142,7 +142,6 @@ body {
     display: inline-block;
     border-radius: 50%;
     vertical-align: middle;
-    margin-left: 13px;
 }
 
 
@@ -271,7 +270,13 @@ body {
     color: #111;
 }
 
+.contents.calling .couple .call-cnt a {
+    display: inline-block;
+}
+
 .contents.calling .couple .call-cnt span {
+    display: inline-block;
+    margin-right: 12px;
     font-size: 14px;
 }
 
@@ -301,7 +306,7 @@ body {
 }
 
 .contents.calling .parents .tit {
-    font-size: 13px!important;
+    font-size: 13px !important;
 }
 
 .contents.calling .parents .item {
@@ -510,7 +515,7 @@ body {
 
 .footer .btm {
     background-color: #d4bda2;
-    height: 100px;
+    height: 97px;
 }
 
 
