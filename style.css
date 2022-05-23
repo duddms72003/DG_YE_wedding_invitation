@@ -364,13 +364,18 @@ body {
 }
 
 .contents.gallery .gallery-wrap {
+    height: 100%;
     margin-top: 20px;
 }
 
 .contents.gallery .grid-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 2px;
+}
+
+.contents.gallery .grid-item {
+
 }
 
 .contents.gallery .grid-wrap .grid-item a {
