@@ -408,7 +408,7 @@ body {
 .contents.location .map-icons-cnt {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px 0;
+    padding: 20px 15px;
     text-align: center;
     background-color: #fafafa;
 }
@@ -509,8 +509,8 @@ body {
 }
 
 .footer .btm {
-    background-color: #ba8f58;
-    height: 70px;
+    background-color: #d4bda2;
+    height: 100px;
 }
 
 
