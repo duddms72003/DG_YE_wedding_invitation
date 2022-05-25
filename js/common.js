@@ -104,7 +104,7 @@ beforeUpdate($sitesListItems, sitesListSlideInit);
 function sitesListSlideInit() {
     // site swiper
     const sitesSwiperThumbs = new Swiper('.menu-list', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         loop: true,
@@ -112,16 +112,11 @@ function sitesListSlideInit() {
             el: '.experience-pagination',
             clickable: true,
         },
-        navigation: {
-            nextEl: '.site-button-next',
-            prevEl: '.site-button-prev',
-        },
         breakpoints: {
             1023: {
                 spaceBetween: 8,
                 slidesPerView: 1,
                 centeredSlides: true,
-                loop: false,
                 pagination: {
                     clickable: false,
                 },
