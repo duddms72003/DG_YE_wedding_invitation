@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/vendors/swiper/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <!-- endinject -->
 
   <!-- inject:dependency:js -->
@@ -34,7 +35,7 @@
 <body>
 <div class="container">
   <div class="wrapper">
-    <!--  <div class="music">
+<!--      <div class="music">
         <a href="javascript:music_player()">
           <div>
             <img id="m_on" src="/mobile/new_m/mcard/images/mcard_30/music_01_off.png" tppabs="/mobile/new_m/mcard/images/mcard_30/music_01_on.png">
@@ -44,6 +45,10 @@
         <audio id="audio" preload="none" loop="loop" src="/music/bgm1.mp3"></audio>
         <iframe id="ie_player" src="/script/order/bgm.asp?bgm=/music/bgm1.mp3" width="0" height="0"></iframe>
       </div>-->
+    <div class="">
+<!--      <audio controls loop><source src="//bit.ly/3euuS7B" type="audio/mpeg"></audio>-->
+      <audio controls loop id="audio" preload="none" loop="loop" src="//bit.ly/3euuS7B"></audio>
+    </div>
     <section class="contents start">
       <div class="txt-cnt">
         <p class="main-tit">시</p>
@@ -418,11 +423,51 @@
       <div class="account-list">
         <div>
           <span class="tit">신랑측 마음</span>
-          <a href="" class="groom">계좌번호보기</a>
+          <a href="javascript:void(0)" class="groom" onclick="clickGroomPopup()">계좌번호보기</a>
         </div>
         <div>
           <span class="tit">신부측 마음</span>
-          <a href="" class="bride">계좌번호보기</a>
+          <a href="javascript:void(0)" class="bride" onclick="clickBridePopup()">계좌번호보기</a>
+        </div>
+      </div>
+
+      <div class="popup account" id="popupGroom" style="display: none;">
+        <div class="modal-dim"></div>
+        <div class="popup-dialog">
+          <div class="popup-header groom">
+            <span>신랑측 계좌번호</span>
+            <div class="popup-btn" style="z-index:1">
+              <a href="javascript:void(0)" class="popup-close" onclick="closeBtnGroom()"><img src="./assets/images/close-icon.svg" alt=""></a>
+            </div>
+          </div>
+
+          <div class="popup-body">
+            <div class="popup-contents">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="popup account" id="popupBride" style="display: none;">
+        <div class="modal-dim"></div>
+        <div class="popup-dialog">
+          <div class="popup-header bride">
+            <span>신부측 계좌번호</span>
+            <div class="popup-btn" style="z-index:1">
+              <a href="javascript:void(0)" class="popup-close" onclick="closeBtnBride()"><img src="./assets/images/close-icon.svg" alt=""></a>
+            </div>
+          </div>
+
+          <div class="popup-body">
+            <div class="popup-contents">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -435,6 +480,10 @@
     <div class="btm"></div>
   </footer>
 </div>
+
+<script>
+
+</script>
 
 <!-- inject:js -->
 <script src="./assets/js/Utils.js"></script>

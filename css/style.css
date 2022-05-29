@@ -18,6 +18,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+    height: 100%;
+    /*overflow: auto;*/
+}
 
 fieldset, img {
     border: 0;
@@ -110,7 +114,6 @@ body {
         color: #ddd;
     }
 }*/
-
 
 
 .wrapper {
@@ -490,6 +493,10 @@ body {
     gap: 6px;
 }
 
+.contents.menu .grid-wrap .grid-item > a {
+    display: inline-block;
+}
+
 /*calendar*/
 .contents.calendar {
     padding: 20px;
@@ -544,6 +551,87 @@ body {
 .footer .btm {
     background-color: #d4bda2;
     height: 93px;
+}
+
+
+/*popup*/
+.modal-dim {
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-size: 0;
+    line-height: 0;
+}
+
+.popup {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.popup-header {
+    position: relative;
+}
+
+.popup-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    box-shadow: 0 0 10px 0 rgba(15, 15, 21, 0.05);
+    background-color: #1d1d1d;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.popup-footer {
+    position: relative
+}
+
+.popup-close {
+    z-index: 10;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+.popup.account .popup-header {
+    position: relative;
+    padding: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+.popup.account .popup-header.groom {
+    background-color: #a3dad9;
+}
+
+.popup.account .popup-header.bride {
+    background-color: #fbc9e2;
+}
+
+.popup.account .popup-dialog {
+    width: 100%;
+    height: 230px;
+    background-color: #ffffff;
+    border: 0;
 }
 
 
