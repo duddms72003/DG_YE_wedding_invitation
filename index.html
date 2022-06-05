@@ -36,12 +36,24 @@
         <audio id="audio" preload="none" loop="loop" src="/music/bgm1.mp3"></audio>
         <iframe id="ie_player" src="/script/order/bgm.asp?bgm=/music/bgm1.mp3" width="0" height="0"></iframe>
       </div>-->
-    <div class="">
-      <audio  loop >
-        <source src="//bit.ly/3euuS7B" type="audio/mpeg">
+
+    <!-- <div class="">
+      <audio loop="loop">
+        <source src="./assets/mp3/song2.mp3" type="audio/mpeg">
       </audio>
-      <iframe src="//bit.ly/3euuS7B" allow="autoplay" id="audio"></iframe>
-    </div>
+      <iframe src="./assets/mp3/song2.mp3" allow="autoplay" id="audio"></iframe>
+    </div> -->
+
+    <!-- <div class="music">
+      <audio src="./assets/mp3/song2.mp3" id="play" loop="loop"></audio>
+    </div> -->
+
+    <iframe src="./assets/mp3/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="audio" autoplay>
+      <source src="./assets/mp3/song2.mp3">
+    </audio>
+
+
     <section class="contents start">
       <div class="txt-cnt">
         <p class="main-tit">시</p>
@@ -193,12 +205,8 @@
         </div>
         <div class="map-icons-cnt">
           <div class="map-icon">
-            <a href="" target="_blank" class="t-map"></a>
-            <p>티맵</p>
-          </div>
-          <div class="map-icon">
-            <a href="" target="_blank" class="kakao-nav"></a>
-            <p>카카오내비</p>
+            <a href="https://goo.gl/maps/CMN8oP7BPL9WJBLa9" target="_blank" class="google-map"></a>
+            <p>구글맵</p>
           </div>
           <div class="map-icon">
             <a href="http://naver.me/G9RaxY9m" target="_blank" class="naver-map"></a>
@@ -475,7 +483,12 @@
 </div>
 
 <script>
+// const audio = new Audio('song2.mp3');
+// const btn = document.querySelector('#play');
 
+// btn.addEventListener('click', () => {
+//   audio.play();
+// });
 </script>
 
 <!-- inject:js -->
