@@ -238,7 +238,7 @@ function plannerSlideInit() {
 
 
 //scroll event / html 태그에 data-dir="up" 처럼 속성 표기가 이루어진다. 터치 다운시  data-dir="up" 터치 업  data-dir="down"
-scrollDir({dir: 'up', attribute: 'data-dir'});
+// scrollDir({dir: 'up', attribute: 'data-dir'});
 
 //이벤트 대상 더미 객체 생성.
 const $EventObj = $('<div class="event-dummy"></div>');
@@ -315,39 +315,39 @@ $gnb.find('a').on('click.gnb', function (e) {
   }
 });
 
-function resizeStageEvent() {
-  if (Utils.getIsMobileSize()) {
+// function resizeStageEvent() {
+//   if (Utils.getIsMobileSize()) {
 
-    $gnb.removeClass('active');
-    // $body.removeClass('overflow');
-    $header.removeClass('add-bg');
+//     $gnb.removeClass('active');
+//     // $body.removeClass('overflow');
+//     $header.removeClass('add-bg');
 
-    if ($openMobileMenuBtn.hasEvent('click.menu-open')) {
-      $openMobileMenuBtn.off('click.menu-open');
-    }
-    if ($closeMobileMenuBtn.hasEvent('click.menu-close')) {
-      $closeMobileMenuBtn.off('click.menu-close');
-    }
+//     if ($openMobileMenuBtn.hasEvent('click.menu-open')) {
+//       $openMobileMenuBtn.off('click.menu-open');
+//     }
+//     if ($closeMobileMenuBtn.hasEvent('click.menu-close')) {
+//       $closeMobileMenuBtn.off('click.menu-close');
+//     }
 
-    $openMobileMenuBtn.on('click.menu-open', function (e) {
-      $gnb.addClass('active');
-      // $body.addClass('overflow');
-    });
-    $closeMobileMenuBtn.on('click.menu-close', function (e) {
-      $gnb.removeClass('active');
-      // $body.removeClass('overflow');
-    });
-  }
-}
+//     $openMobileMenuBtn.on('click.menu-open', function (e) {
+//       $gnb.addClass('active');
+//       // $body.addClass('overflow');
+//     });
+//     $closeMobileMenuBtn.on('click.menu-close', function (e) {
+//       $gnb.removeClass('active');
+//       // $body.removeClass('overflow');
+//     });
+//   }
+// }
 
-$(window).on('resize.stage', function () {
-  resizeStageEvent();
-})
-resizeStageEvent();
+// $(window).on('resize.stage', function () {
+//   resizeStageEvent();
+// })
+// resizeStageEvent();
 
 
 //start : scroll masic ================================================
-const controller = new ScrollMagic.Controller();
+// const controller = new ScrollMagic.Controller();
 
 /*// build tween
 let tween = TweenMax.from("#animate", 0.5, {autoAlpha: 0, scale: 0.7});
@@ -359,10 +359,10 @@ let scene = new ScrollMagic.Scene({triggerElement: "a#top", duration: 200, trigg
     .addTo(controller);*/
 
 // change behaviour of controller to animate scroll instead of jump
-controller.scrollTo((pos) => {
-  // console.log( pos )
-  TweenMax.to(window, 0.5, {scrollTo: {y: pos}});
-});
+// controller.scrollTo((pos) => {
+//   // console.log( pos )
+//   TweenMax.to(window, 0.5, {scrollTo: {y: pos}});
+// });
 
 //  bind scroll to anchor links
 $(document).on('click', '.gnb-list a', function (e) {
@@ -409,26 +409,26 @@ function activeShortcutBtn(idx) {
 }
 
 
-const $mainVisualVideos = $('.video-list .bg-video');
-//video ended event
-$mainVisualVideos.on('ended', function (e) {
-  // console.log( e )
-  //현재 카운트에서 다음 카운트 자동 계산
-  currentCount = Utils.getCount(currentCount, 1, true, true)
-  updateVideo(currentCount, $mainVisualVideos)
-  activeShortcutBtn(currentCount);
-  videoSwiper.slideTo(currentCount, 500);
-});
-updateVideo(currentCount, $mainVisualVideos);
-activeShortcutBtn(currentCount);
-modalShortcutBtns.modalVideo();
+// const $mainVisualVideos = $('.video-list .bg-video');
+// //video ended event
+// $mainVisualVideos.on('ended', function (e) {
+//   // console.log( e )
+//   //현재 카운트에서 다음 카운트 자동 계산
+//   currentCount = Utils.getCount(currentCount, 1, true, true)
+//   updateVideo(currentCount, $mainVisualVideos)
+//   activeShortcutBtn(currentCount);
+//   videoSwiper.slideTo(currentCount, 500);
+// });
+// updateVideo(currentCount, $mainVisualVideos);
+// activeShortcutBtn(currentCount);
+// modalShortcutBtns.modalVideo();
 
 
-videoSwiper.on('transitionStart', function (e) {
-  currentCount = this.realIndex;
-  updateVideo(currentCount, $mainVisualVideos);
-  activeShortcutBtn(currentCount);
-});
+// videoSwiper.on('transitionStart', function (e) {
+//   currentCount = this.realIndex;
+//   updateVideo(currentCount, $mainVisualVideos);
+//   activeShortcutBtn(currentCount);
+// });
 
 //video pagination 클릭시
 /*videoSwiper.on('change', function(e){
