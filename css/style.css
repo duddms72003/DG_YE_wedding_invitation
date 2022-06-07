@@ -383,14 +383,69 @@ body {
     gap: 2px;
 }
 
-.contents.gallery .grid-item {
-
-}
-
 .contents.gallery .grid-wrap .grid-item a {
     width: 100%;
     display: inline-block;
 }
+
+
+
+
+.contents.gallery-test{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contents.gallery-test .gallery-wrap{
+    display: flex;
+    width: 3370px;
+}
+
+.contents.gallery-test .gallery-wrap .grid-item{
+    flex: 0 0 240px;
+    position: relative;
+    width: 240px;
+    height: 360px;
+    margin-right: 10px;
+}
+
+.contents.gallery-test .gallery-wrap .grid-item .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    
+}
+
+
+
+/* .contents.gallery-test .gallery-wrap .grid-item .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    
+}
+
+.contents.gallery-test .gallery-wrap .grid-item .arch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    background-image: url(../images/arch.png);
+    background-repeat: no-repeat;
+    background-size: 240px auto;
+    background-position: 0 0;
+    z-index: 10; 
+} */
+
 
 .contents.location {
     margin-top: 100px;
@@ -426,8 +481,8 @@ body {
 
 .contents.location .map-icons-cnt {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 65px;
     text-align: center;
     background-color: #fafafa;
 }
@@ -442,12 +497,16 @@ body {
 }
 
 
-.contents.location .map-icon a.t-map {
+/* .contents.location .map-icon a.t-map {
     background-image: url("../images/location_tmap.png");
 }
 
 .contents.location .map-icon a.kakao-nav {
     background-image: url("../images/location_kakaonavi.png");
+} */
+
+.contents.location .map-icon a.google-map {
+    background-image: url("../images/location_googlemap.png");
 }
 
 .contents.location .map-icon a.naver-map {

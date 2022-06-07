@@ -26,33 +26,13 @@
 <body>
 <div class="container">
   <div class="wrapper">
-<!--      <div class="music">
-        <a href="javascript:music_player()">
-          <div>
-            <img id="m_on" src="/mobile/new_m/mcard/images/mcard_30/music_01_off.png" tppabs="/mobile/new_m/mcard/images/mcard_30/music_01_on.png">
-            <p style="display:none;" id="m_off">stop</p>
-          </div>
-        </a>
-        <audio id="audio" preload="none" loop="loop" src="/music/bgm1.mp3"></audio>
-        <iframe id="ie_player" src="/script/order/bgm.asp?bgm=/music/bgm1.mp3" width="0" height="0"></iframe>
-      </div>-->
-
-    <!-- <div class="">
-      <audio loop="loop">
-        <source src="./assets/mp3/song2.mp3" type="audio/mpeg">
-      </audio>
-      <iframe src="./assets/mp3/song2.mp3" allow="autoplay" id="audio"></iframe>
-    </div> -->
 
     <!-- <div class="music">
-      <audio src="./assets/mp3/song2.mp3" id="play" loop="loop"></audio>
+      <audio id="audio" autoplay>
+        <source src="./assets/mp3/song2.mp3">
+      </audio>
+      <iframe src="./assets/mp3/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     </div> -->
-
-    <iframe src="./assets/mp3/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-    <audio id="audio" autoplay>
-      <source src="./assets/mp3/song2.mp3">
-    </audio>
-
 
     <section class="contents start">
       <div class="txt-cnt">
@@ -147,7 +127,8 @@
         </div>
       </div>
     </section>
-    <section class="contents gallery">
+
+     <!-- <section class="contents gallery">
       <p class="cnt-tit">GALLERY</p>
       <div class="gallery-wrap grid-wrap">
         <div class="grid-item">
@@ -182,7 +163,46 @@
         </div>
       </div>
       <p class="ps-txt">이미지를 클릭하시면 확대보기가 가능합니다.</p>
-    </section>
+    </section>  -->
+
+
+
+    
+
+
+  <section class="contents gallery-test">
+    <p class="cnt-tit">GALLERY</p>
+    <div class="gallery-wrap grid-wrap">
+      <div class="grid-item">
+        <div class="image">
+          <img src="./assets/images/wedding.jpeg">
+        </div>
+        <div class="arch"></div>
+      </div>
+      <div class="grid-item">
+        <div class="image">
+          <img src="./assets/images/wedding.jpeg">
+        </div>
+        <div class="arch"></div>
+      </div>
+      <div class="grid-item">
+        <div class="image">
+          <img src="./assets/images/wedding.jpeg">
+        </div>
+        <div class="arch"></div>
+      </div>
+      <div class="grid-item">
+        <div class="image">
+          <img src="./assets/images/wedding.jpeg">
+        </div>
+        <div class="arch"></div>
+      </div>
+    </div>
+  </section>
+
+    
+
+
     <section class="contents location">
       <p class="cnt-tit">LOCATION</p>
       <div class="address">
