@@ -18,6 +18,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+    height: 100%;
+    /*overflow: auto;*/
+}
 
 fieldset, img {
     border: 0;
@@ -110,7 +114,6 @@ body {
         color: #ddd;
     }
 }*/
-
 
 
 .wrapper {
@@ -380,14 +383,69 @@ body {
     gap: 2px;
 }
 
-.contents.gallery .grid-item {
-
-}
-
 .contents.gallery .grid-wrap .grid-item a {
     width: 100%;
     display: inline-block;
 }
+
+
+
+
+.contents.gallery-test{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contents.gallery-test .gallery-wrap{
+    display: flex;
+    width: 3370px;
+}
+
+.contents.gallery-test .gallery-wrap .grid-item{
+    flex: 0 0 240px;
+    position: relative;
+    width: 240px;
+    height: 360px;
+    margin-right: 10px;
+}
+
+.contents.gallery-test .gallery-wrap .grid-item .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    
+}
+
+
+
+/* .contents.gallery-test .gallery-wrap .grid-item .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    
+}
+
+.contents.gallery-test .gallery-wrap .grid-item .arch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 360px;
+    background-image: url(../images/arch.png);
+    background-repeat: no-repeat;
+    background-size: 240px auto;
+    background-position: 0 0;
+    z-index: 10; 
+} */
+
 
 .contents.location {
     margin-top: 100px;
@@ -423,8 +481,8 @@ body {
 
 .contents.location .map-icons-cnt {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 65px;
     text-align: center;
     background-color: #fafafa;
 }
@@ -439,12 +497,16 @@ body {
 }
 
 
-.contents.location .map-icon a.t-map {
+/* .contents.location .map-icon a.t-map {
     background-image: url("../images/location_tmap.png");
 }
 
 .contents.location .map-icon a.kakao-nav {
     background-image: url("../images/location_kakaonavi.png");
+} */
+
+.contents.location .map-icon a.google-map {
+    background-image: url("../images/location_googlemap.png");
 }
 
 .contents.location .map-icon a.naver-map {
@@ -548,6 +610,87 @@ body {
 .footer .btm {
     background-color: #d4bda2;
     height: 93px;
+}
+
+
+/*popup*/
+.modal-dim {
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-size: 0;
+    line-height: 0;
+}
+
+.popup {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.popup-header {
+    position: relative;
+}
+
+.popup-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    box-shadow: 0 0 10px 0 rgba(15, 15, 21, 0.05);
+    background-color: #1d1d1d;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.popup-footer {
+    position: relative
+}
+
+.popup-close {
+    z-index: 10;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+.popup.account .popup-header {
+    position: relative;
+    padding: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+.popup.account .popup-header.groom {
+    background-color: #a3dad9;
+}
+
+.popup.account .popup-header.bride {
+    background-color: #fbc9e2;
+}
+
+.popup.account .popup-dialog {
+    width: 100%;
+    height: 230px;
+    background-color: #ffffff;
+    border: 0;
 }
 
 
