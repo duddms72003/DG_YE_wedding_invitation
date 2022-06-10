@@ -195,42 +195,26 @@ function sitesListSlideInit() {
 
 // end: 20220509 수정 ====================================================
 
-const $plannerItems = $('.planner-list .planner-top .swiper-slide');
+const $plannerItems = $('.gallery-list .gallery-top .swiper-slide');
 //이미지 태그를 감싸고 있는 컨테이너를 전달하면 된다.
 beforeUpdate($plannerItems, plannerSlideInit);
 
 function plannerSlideInit() {
-  // planner swiper
-  /* const plannerSwiperThumbs = new Swiper('.planner-thumbs', {
-       spaceBetween: 12,
-       slidesPerView: 4,
-       touchRatio:0
-   });*/
 
-  let plannerSwiperTop = new Swiper('.planner-top', {
+  let plannerSwiperTop = new Swiper('.gallery-top', {
     loop: true,
     cssMode: true,
-    centeredSlides: true, // 20220509 추가
+    centeredSlides: true,
     // slidesPerView: 1,
     /*thumbs: {
         swiper: plannerSwiperThumbs
     },*/
     breakpoints: {
       1023: {
-        spaceBetween: 8,
-        slidesPerView: 1.075 // 20220509 수정
+        spaceBetween: 17,
+        slidesPerView: 1.2
       }
     },
-    navigation: {
-      nextEl: '.planner-button-next',
-      prevEl: '.planner-button-prev'
-    }
-  });
-  $('.gallery-thumbs.planner-thumbs .swiper-slide').on('click.planner-pagination', function (e) {
-    e.preventDefault();
-    let idx = parseInt($(e.currentTarget).attr('data-index'));
-    // console.log( idx )
-    plannerSwiperTop.slideTo(idx + 1, 500);
   });
 }
 
@@ -623,6 +607,17 @@ function closeBtnBride(){
   x.style.display = "none";
 }
 
+
+
+
+/* 계좌번호 클릭 */
+function copy_to_clipboard(event) {
+  const copyText = event.target.parentNode.previousElementSibling;
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("Copy");
+  alert('복사되었습니다, 감사합니다.');
+}
 
 
 

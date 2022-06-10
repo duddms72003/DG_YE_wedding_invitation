@@ -80,6 +80,8 @@ input[type="checkbox"] {
     background: #fff;
 }
 
+input:focus {outline: none;}
+
 header, section, article, aside, nav, footer {
     display: block;
 }
@@ -366,85 +368,22 @@ body {
     color: #fba8d1;
 }
 
+
 /*gallery*/
 .contents.gallery {
     margin-top: 50px;
     text-align: center;
 }
 
-.contents.gallery .gallery-wrap {
-    height: 100%;
-    margin-top: 20px;
-}
-
-.contents.gallery .grid-wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
-}
-
-.contents.gallery .grid-wrap .grid-item a {
-    width: 100%;
-    display: inline-block;
-}
-
-
-
-
-.contents.gallery-test{
-    margin-top: 50px;
-    text-align: center;
-}
-
-.contents.gallery-test .gallery-wrap{
-    display: flex;
-    width: 3370px;
-}
-
-.contents.gallery-test .gallery-wrap .grid-item{
-    flex: 0 0 240px;
-    position: relative;
-    width: 240px;
-    height: 360px;
-    margin-right: 10px;
-}
-
-.contents.gallery-test .gallery-wrap .grid-item .image{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 240px;
-    height: 360px;
+.contents.gallery .gallery-list .image{
     overflow: hidden;
-    border-top-left-radius: 120px;
-    border-top-right-radius: 120px;
-    
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
 }
 
+.contents.gallery .gallery-list .image > img{
 
-
-/* .contents.gallery-test .gallery-wrap .grid-item .image{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 240px;
-    height: 360px;
-    overflow: hidden;
-    
 }
-
-.contents.gallery-test .gallery-wrap .grid-item .arch{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 240px;
-    height: 360px;
-    background-image: url(../images/arch.png);
-    background-repeat: no-repeat;
-    background-size: 240px auto;
-    background-position: 0 0;
-    z-index: 10; 
-} */
 
 
 .contents.location {
@@ -556,6 +495,8 @@ body {
     display: inline-block;
 }
 
+.swiper-container{z-index: 0}
+
 /*calendar*/
 .contents.calendar {
     padding: 20px;
@@ -599,6 +540,17 @@ body {
 .contents.account .account-list a.bride {
     background-color: #fbc9e2;
 }
+
+
+.account-cnt{width: 100%; margin: 0 auto; position: absolute; top: 50%;right: 50%; transform: translate(50%, 50%);}
+.account-txt{ padding: 10px 6px;}
+.account-txt span{}
+.account-txt span:first-child{text-align: left}
+.account-txt span:last-child{text-align: right}
+
+.account-num{}
+.account-num > input{background-color: beige; padding: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+.account-num button{background-color: beige; padding: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
 
 /*footer*/
 .footer .contents {
@@ -657,6 +609,8 @@ body {
     border-radius: 10px;
     overflow-y: auto;
 }
+
+.popup-contents{position: relative}
 
 .popup-footer {
     position: relative
