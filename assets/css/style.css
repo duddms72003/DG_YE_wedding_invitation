@@ -16,6 +16,10 @@ body {
     font-family: 'Nanum Myeongjo', 'Nanum Gothic', 'helvetica', serif, 'AppleGothic', sans-serif;;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 html, body {
@@ -387,15 +391,12 @@ body {
     border-top-left-radius: 200px;
 }
 
-.contents.gallery .gallery-list .image-cnt.pic1 {
-    background-image: url("../images/wedding.jpeg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    border: 2px solid pink;
-}
 
 .contents.gallery .gallery-list .image-cnt > img {
+    width: 100%;
+}
+
+.contents.gallery .gallery-list .image-cnt > img:focus {
     width: 100%;
 }
 
@@ -646,6 +647,7 @@ body {
 
 .popup-dialog {
     position: absolute;
+    width: 93% !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
