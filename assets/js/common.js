@@ -211,8 +211,8 @@ function plannerSlideInit() {
     },*/
     breakpoints: {
       1023: {
-        spaceBetween: 17,
-        slidesPerView: 1.2
+        spaceBetween: 10,
+        slidesPerView: 2
       }
     },
   });

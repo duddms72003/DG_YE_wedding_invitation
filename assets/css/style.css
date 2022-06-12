@@ -80,7 +80,9 @@ input[type="checkbox"] {
     background: #fff;
 }
 
-input:focus {outline: none;}
+input:focus {
+    outline: none;
+}
 
 header, section, article, aside, nav, footer {
     display: block;
@@ -375,14 +377,23 @@ body {
     text-align: center;
 }
 
-.contents.gallery .gallery-list .image{
+.contents.gallery .gallery-list .swiper-slide {
+    width: 240px!important;
+}
+
+.contents.gallery .gallery-list .swiper-slide .grid-item {
+    width: 240px;
+    height: 360px;
+}
+
+.contents.gallery .gallery-list .image {
     overflow: hidden;
     border-top-right-radius: 200px;
     border-top-left-radius: 200px;
 }
 
-.contents.gallery .gallery-list .image > img{
-
+.contents.gallery .gallery-list .image > img {
+    width: 100%;
 }
 
 
@@ -495,7 +506,9 @@ body {
     display: inline-block;
 }
 
-.swiper-container{z-index: 0}
+.swiper-container {
+    z-index: 0
+}
 
 /*calendar*/
 .contents.calendar {
@@ -542,15 +555,46 @@ body {
 }
 
 
-.account-cnt{width: 100%; margin: 0 auto; position: absolute; top: 50%;right: 50%; transform: translate(50%, 50%);}
-.account-txt{ padding: 10px 6px;}
-.account-txt span{}
-.account-txt span:first-child{text-align: left}
-.account-txt span:last-child{text-align: right}
+.account-cnt {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
 
-.account-num{}
-.account-num > input{background-color: beige; padding: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
-.account-num button{background-color: beige; padding: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+.account-txt {
+    padding: 10px 6px;
+}
+
+.account-txt span {
+}
+
+.account-txt span:first-child {
+    text-align: left
+}
+
+.account-txt span:last-child {
+    text-align: right
+}
+
+.account-num {
+}
+
+.account-num > input {
+    background-color: beige;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.account-num button {
+    background-color: beige;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 /*footer*/
 .footer .contents {
@@ -610,7 +654,9 @@ body {
     overflow-y: auto;
 }
 
-.popup-contents{position: relative}
+.popup-contents {
+    position: relative
+}
 
 .popup-footer {
     position: relative
