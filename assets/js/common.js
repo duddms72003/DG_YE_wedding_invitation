@@ -211,7 +211,7 @@ function plannerSlideInit() {
     },*/
     breakpoints: {
       1023: {
-        spaceBetween: 10,
+        spaceBetween: 12.5,
         slidesPerView: 1.6
       }
     },
@@ -663,3 +663,4 @@ function copy_to_clipboard(event) {
 //
 // // 20220519 추가 - System & Interface youtube modal
 //   $('.system-youtube .js-modal-btn').modalVideo();
+

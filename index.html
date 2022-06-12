@@ -13,12 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/vendors/swiper/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-
   <!-- endinject -->
 
   <!-- inject:dependency:js -->
   <script src="./assets/vendors/jquery/jquery-3.5.1.min.js"></script>
   <script src="./assets/vendors/swiper/swiper.min.js"></script>
+
   <!-- endinject -->
 
 
@@ -52,7 +52,7 @@
       </div>
     </section>
     <section class="contents invitation">
-      <p class="cnt-tit">INVITATION</p>
+      <p class="cnt-tit"><span class="leaf left"></span>INVITATION<span class="leaf right"></span></p>
       <div class="txt-cnt top">
         <p>서로의 모습 그대로를 사랑하는 사람을 만나</p>
         <p>언제나 함께 웃을 수 있는 하나가 되려 합니다.</p>
@@ -129,7 +129,7 @@
     </section>
 
     <section class="contents gallery">
-      <p class="cnt-tit">GALLERY</p>
+      <p class="cnt-tit"><span class="leaf left"></span>GALLERY<span class="leaf right"></span></p>
       <div class="gallery-list">
         <div class="swiper-container gallery-top">
 <!--          <div class="swiper-wrapper">
@@ -167,7 +167,7 @@
             <div class="swiper-slide">
               <div class="grid-item">
                 <div class="image-cnt">
-                  <img src="./assets/images/wedding2.jpeg" alt="">
+                  <img src="./assets/images/wedding1.jpeg" alt="">
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@
             <div class="swiper-slide">
               <div class="grid-item">
                 <div class="image-cnt">
-                  <img src="./assets/images/wedding1.jpeg" alt="">
+                  <img src="./assets/images/wedding2.jpeg" alt="">
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@
     </section>
 
     <section class="contents location">
-      <p class="cnt-tit">LOCATION</p>
+      <p class="cnt-tit"><span class="leaf left"></span>LOCATION<span class="leaf right"></span></p>
       <div class="address">
         <div class="left">
           <p class="tit">보타닉파크웨딩 카라홀</p>
@@ -263,8 +263,9 @@
         </div>
       </div>
     </section>
+
     <section class="contents account">
-      <p class="cnt-tit">ACCOUNT</p>
+      <p class="cnt-tit"><span class="leaf left"></span>ACCOUNT<span class="leaf right"></span></p>
       <p class="main-tit">축하의 마음을 담아 축의금을 전달해보세요.</p>
       <div class="account-list">
         <div>
@@ -339,12 +340,14 @@
         </div>
       </div>
     </section>
+
     <section class="contents calendar">
       달력
 
     </section>
+
     <section class="contents menu">
-      <p class="cnt-tit">BUFFET MENU</p>
+      <p class="cnt-tit"><span class="leaf left"></span>BUFFET MENU<span class="leaf right"></span></p>
 
       <div class="swiper-container menu-list">
         <div class="swiper-wrapper">
@@ -530,11 +533,24 @@
   // btn.addEventListener('click', () => {
   //   audio.play();
   // });
+
+
+
+
+/*  $(window).load(function () {
+    $('body').sakura();
+  });*/
+
+  $(window).on('load', function (){
+    $('body').sakura();
+  })
+
 </script>
 
 <!-- inject:js -->
 <script src="./assets/js/Utils.js"></script>
 <script src="./assets/js/common.js"></script>
+<script src="./assets/js/flower.js"></script>
 <!-- endinject -->
 
 </body>
