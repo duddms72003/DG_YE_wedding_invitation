@@ -212,7 +212,7 @@ function plannerSlideInit() {
     breakpoints: {
       1023: {
         spaceBetween: 10,
-        slidesPerView: 2
+        slidesPerView: 1.6
       }
     },
   });
