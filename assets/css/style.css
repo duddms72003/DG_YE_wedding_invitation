@@ -386,20 +386,17 @@ body {
 }
 
 .contents.gallery .gallery-list .image-cnt {
+    height: 100%;
     overflow: hidden;
     border-top-right-radius: 200px;
     border-top-left-radius: 200px;
 }
 
-
 .contents.gallery .gallery-list .image-cnt > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.contents.gallery .gallery-list .image-cnt > img:focus {
-    width: 100%;
-}
-
 
 .contents.location {
     margin-top: 100px;
