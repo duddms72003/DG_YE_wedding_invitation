@@ -115,15 +115,6 @@ body {
     color: #000;
 }
 
-/* DarkMode일 때 사용되는 컬러 */
-/*@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #222;
-        color: #ddd;
-    }
-}*/
-
-
 .wrapper {
     background: url(../images/bg.jpeg);
     background-size: cover;
@@ -730,6 +721,23 @@ body {
     border: 0;
 }
 
+
+/* 텍스트 스크롤 테스트 */
+.scroll-y {
+    transform: translateY(20vh);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+}
+.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
 
 
 

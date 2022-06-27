@@ -622,6 +622,27 @@ function copy_to_clipboard(event) {
 
 
 
+/* 텍스트 스크롤 */
+let elementsArray = document.querySelectorAll(".scroll-y");
+console.log(elementsArray);
+window.addEventListener('scroll', fadeIn );
+function fadeIn() {
+  for (let i = 0; i < elementsArray.length; i++) {
+    let elem = elementsArray[i]
+    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+    if (distInView < 0) {
+      elem.classList.add("inView");
+    } else {
+      elem.classList.remove("inView");
+    }
+  }
+}
+fadeIn();
+
+
+
+
+
 // banner swiper - 모바일에서만 작동.
 // bannerSwiperInit();
 // $(window).on('resize', () => {
