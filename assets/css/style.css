@@ -618,7 +618,7 @@ body {
 }
 
 .account-num .copy-btn{
-    width: 45%;
+    width: 50%;
     border-radius:10px;
     background-color: #fadb6c;
 }
@@ -627,6 +627,7 @@ body {
     width: 100%;
     display: inline-block;
     padding: 15px;
+    color: #000000;
 }
 
 /*footer*/
