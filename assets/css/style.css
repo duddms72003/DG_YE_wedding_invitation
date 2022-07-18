@@ -597,7 +597,7 @@ body {
 
 .account-txt span {
     display: table-cell;
-    font-size: 13px;
+    font-size: 15px;
     font-family: sans-serif !important;
 }
 
@@ -611,6 +611,7 @@ body {
 
 .account-num > input {
     width: 100%;
+    font-size: 15px;
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 7px;
@@ -618,12 +619,15 @@ body {
 
 .account-num .copy-btn{
     width: 45%;
-    padding: 10px;
-    cursor: pointer;
     border-radius:10px;
     background-color: #fadb6c;
 }
 
+.account-num .copy-btn > span{
+    width: 100%;
+    display: inline-block;
+    padding: 15px;
+}
 
 /*footer*/
 .footer .contents {
@@ -686,7 +690,7 @@ body {
 
 .popup-contents {
     position: relative;
-    padding: 25px;
+    padding: 30px;
 }
 
 .popup-footer {
