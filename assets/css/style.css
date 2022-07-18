@@ -303,6 +303,43 @@ body {
     background-attachment: fixed;
 }
 
+
+
+/*test*/
+.first, .second {
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+
+.bg-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.first .bg {
+    background-image: url(../images/flower1.jpg);
+}
+
+/*test*/
+
+
+
 .contents.calling .couple {
     text-align: center;
     padding: 35px;
@@ -625,6 +662,7 @@ body {
 
 .account-num .copy-btn > span{
     width: 100%;
+    font-size: 15px;
     display: inline-block;
     padding: 15px;
     color: #000000;
