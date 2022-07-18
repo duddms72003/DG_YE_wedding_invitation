@@ -629,29 +629,39 @@ body {
 
 .account-txt {
     width: 100%;
-    display: table;
+    /* display: table; */
+    text-align: center;
 }
 
 .account-txt span {
-    display: table-cell;
-    font-size: 15px;
-    font-family: sans-serif !important;
+    font-size: 18px;
+    font-family: 'Gaegu', cursive;
+    font-weight: bold;
 }
 
 .account-txt span:first-child {
-    text-align: left;
+    position: relative;
+    padding-right: 30px;
 }
 
-.account-txt span:last-child {
-    text-align: right;
+.account-txt span:first-child:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #ba8f58;
+    position: absolute;
+    top: 3px;
+    right: 13px;
 }
 
 .account-num > input {
     width: 100%;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0 25px 0;
     border-radius: 7px;
+    font-family: 'Gaegu', cursive;
 }
 
 .account-num .copy-btn{
@@ -662,9 +672,11 @@ body {
 
 .account-num .copy-btn > span{
     width: 100%;
-    font-size: 15px;
-    display: inline-block;
     padding: 15px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gaegu', cursive;
     color: #000000;
 }
 
@@ -761,13 +773,23 @@ body {
 
 }
 
-/*.popup.account .popup-header.groom {
-    background-color: #a3dad9;
+.popup.account .popup-header.groom {
+     position: relative;
+}
+
+.popup.account .popup-header.groom::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
 }
 
 .popup.account .popup-header.bride {
-    background-color: #fbc9e2;
-}*/
+}
 
 .popup.account .popup-dialog {
     width: 100%;
