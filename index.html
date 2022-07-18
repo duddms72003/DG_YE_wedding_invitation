@@ -13,6 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/vendors/swiper/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Poor+Story&family=Yeon+Sung&display=swap" rel="stylesheet">
   <!-- endinject -->
 
   <!-- inject:dependency:js -->
@@ -282,7 +291,7 @@
         <div class="modal-dim"></div>
         <div class="popup-dialog">
           <div class="popup-header groom">
-            <span>신랑측 계좌번호</span>
+            <span>신랑측</span>
             <div class="popup-btn" style="z-index:1">
               <a href="javascript:void(0)" class="popup-close" onclick="closeBtnGroom()"><img
                   src="./assets/images/close-icon.svg" alt=""></a>
@@ -298,8 +307,8 @@
                 </p>
                 <p class="account-num">
                   <input value="60480204131131" readonly>
-                  <button onclick="copy_to_clipboard(event)">
-                    <span>복사</span>
+                  <button class="copy-btn" onclick="copy_to_clipboard(event)">
+                    <span class="">복사하기</span>
                   </button>
                 </p>
               </div>
@@ -313,7 +322,7 @@
         <div class="modal-dim"></div>
         <div class="popup-dialog">
           <div class="popup-header bride">
-            <span>신부측 계좌번호</span>
+            <span>신부측</span>
             <div class="popup-btn" style="z-index:1">
               <a href="javascript:void(0)" class="popup-close" onclick="closeBtnBride()"><img
                   src="./assets/images/close-icon.svg" alt=""></a>
@@ -329,8 +338,8 @@
                 </p>
                 <p class="account-num">
                   <input value="99421060170" readonly>
-                  <button onclick="copy_to_clipboard(event)">
-                    <span>복사</span>
+                  <button class="copy-btn" onclick="copy_to_clipboard(event)">
+                    <span class="">복사하기</span>
                   </button>
                 </p>
               </div>
@@ -516,9 +525,9 @@
 
       <p class="ps-txt">약 200여 가지의 음식이 준비되어 있습니다.</p>
     </section>
-    <section class="contents flower">
+<!--    <section class="contents flower">
       <img src="./assets/images/flower1.jpg" alt="">
-    </section>
+    </section>-->
   </div>
   <footer class="footer">
     <div class="contents">made by 조영은</div>

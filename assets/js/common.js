@@ -608,6 +608,9 @@ function closeBtnBride(){
 }
 
 
+window.addEventListener('click', () => {
+
+})
 
 
 /* 계좌번호 클릭 */
@@ -618,6 +621,8 @@ function copy_to_clipboard(event) {
   document.execCommand("Copy");
   alert('복사되었습니다, 감사합니다.');
 }
+
+
 
 
 

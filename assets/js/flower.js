@@ -53,7 +53,7 @@
     var defaults = {
       blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
       className: 'sakura',
-      fallSpeed: 3,
+      fallSpeed: 0.8,
       maxSize: 14,
       minSize: 9,
       newOn: 300,
@@ -95,11 +95,13 @@
       });
 
       // Apply Event Listener to remove petals that finish their horizontal float animation.
-      prefixedEvent(petal, 'AnimationIteration', function (ev) {
+
+      //주석처리20220629
+      /*  prefixedEvent(petal, 'AnimationIteration', function (ev) {
         if ($.inArray(ev.animationName, options.blowAnimations) != -1) {
           $(this).remove();
         }
-      });
+      });*/
 
       petal
           .css({
