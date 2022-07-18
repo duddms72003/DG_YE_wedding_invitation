@@ -285,9 +285,9 @@ body {
 /*calling*/
 .contents.calling .img-cnt {
     position: relative;
-    background-color: #d4bda2;
     height: 100px;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
+    background-color: #d4bda2;
 }
 
 
@@ -297,16 +297,16 @@ body {
     line-height: 100px;
     letter-spacing: 10px;
     font-size: 12px;
-    font-weight: 200;
-    background-image: url(../images/flower1.jpg);
+    font-weight: bold;
+    /* background-image: url(../images/flower1.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 
 
 /*test*/
-.first, .second {
+/* .first, .second {
     width: 100%;
     position: relative;
     height: 100px;
@@ -334,7 +334,7 @@ body {
 
 .first .bg {
     background-image: url(../images/flower1.jpg);
-}
+} */
 
 /*test*/
 
@@ -446,7 +446,8 @@ body {
 }
 
 .contents.gallery .gallery-list .swiper-slide .grid-item {
-    height: 360px;
+    /* height: 360px; */
+    height: 420px;
 }
 
 .contents.gallery .gallery-list .image-cnt {
@@ -770,25 +771,23 @@ body {
     font-weight: bold;
     color: #1d1d1d;
     background-color: #fadb6c;
-
 }
 
-.popup.account .popup-header.groom {
-     position: relative;
-}
-
-.popup.account .popup-header.groom::before {
-    content: '';
+.popup.account .popup-header span{
+    position: relative;
     display: inline-block;
-    position: absolute;
-    top: -10px;
-    width: 35px;
-    height: 35px;
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
 }
 
-.popup.account .popup-header.bride {
+.popup.account .popup-header span::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/heart.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
 }
 
 .popup.account .popup-dialog {
@@ -809,6 +808,7 @@ body {
     transition: .8s;
     opacity: 0;
 }
+
 .inView {
     opacity: 1;
     -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
