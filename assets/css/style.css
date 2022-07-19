@@ -579,7 +579,10 @@ body {
     object-fit: cover;
 }
 
-
+.contents.gallery .gallery-list + .date {
+    margin-top: 30px;
+    font-size: 12px;
+}
 
 
 
