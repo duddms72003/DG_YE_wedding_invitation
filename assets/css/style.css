@@ -306,7 +306,7 @@ body {
 
 
 /*test*/
-/* .first, .second {
+ .first {
     width: 100%;
     position: relative;
     height: 100px;
@@ -330,11 +330,13 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .first .bg {
     background-image: url(../images/flower1.jpg);
-} */
+}
 
 /*test*/
 
