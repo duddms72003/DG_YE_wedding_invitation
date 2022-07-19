@@ -322,7 +322,7 @@ body {
     height: 100%;
 }
 
-.bg {
+.bg-wrap .bg {
     position: fixed;
     display: block;
     top: 0;
@@ -336,12 +336,85 @@ body {
 }
 
 .first .bg {
-    background-image: url(../images/flower1.jpg);
+    background-image: url(../images/pink_flower.jpeg);
 }
 
-.second .bg {
-    background-image: url(../images/flower1.jpg);
+/*.second .bg {
+    background-image: url(../images/daisy5.png);
+}*/
+
+.daisy-cnt{
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 100px;
 }
+
+.daisy-cnt .daisy{
+    display: inline-block;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-size: 55px 55px;
+    background-image: url("../images/daisy1.png");
+}
+
+.daisy.daisy1{
+    top: 0;
+    left: 0;
+}
+
+.daisy.daisy2{
+    top: 10px;
+    left: 30px;
+}
+
+.daisy.daisy3{
+    top: 10px;
+    left: 60px;
+}
+.daisy.daisy4{
+    top: 40px;
+    left: 80px;
+}
+.daisy.daisy5{
+    top: 20px;
+    left: 120px;
+}
+.daisy.daisy6{
+    top: 30px;
+    left: 150px;
+}
+.daisy.daisy7{
+    top: 35px;
+    left: 180px;
+}
+
+.daisy.daisy8{
+    top: 20px;
+    left: 205px;
+}
+
+.daisy.daisy9{
+    top: 40px;
+    left: 230px;
+}
+.daisy.daisy10{
+    top: 10px;
+    left: 245px;
+}
+.daisy.daisy11{
+    z-index: 1;
+    top: 10px;
+    left: 250px;
+}
+.daisy.daisy12{
+    top: 0;
+    left: 270px;
+}
+
+
+
 
 /*test*/
 
@@ -448,6 +521,7 @@ body {
 
 /*gallery*/
 .contents.gallery {
+    position: relative;
     margin-top: 70px;
     text-align: center;
 }
