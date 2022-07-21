@@ -10,7 +10,6 @@
 
 body {
     position: relative;
-    overflow-x:hidden;
     width: 100%;
     height: 100%;
     font-size: 12px !important;
@@ -562,7 +561,7 @@ label {
 /*gallery*/
 .contents.gallery {
     position: relative;
-    margin-top: 70px;
+    margin-top: 30px;
     text-align: center;
 }
 
