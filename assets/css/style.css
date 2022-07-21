@@ -21,7 +21,15 @@ body {
     -ms-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    background: #fff;
+    color: #000;
 }
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
 html, body {
     height: 100%;
     /*overflow: auto;*/
@@ -104,15 +112,13 @@ label {
 }
 
 
-html {
-    width: 100%;
-    height: 100%;
-}
+
 
 /* LightMode일 때 사용되는 컬러 */
-body {
-    background: #fff;
-    color: #000;
+
+.container{
+    position: relative;
+    overflow-x: hidden;
 }
 
 .wrapper {
