@@ -604,6 +604,8 @@ label {
     padding: 20px;
     font-family: "Noto Sans KR", sans-serif;
     text-align: left;
+    margin: 0 10px 10px 10px;
+    border-radius: 20px;
     background-color: #ffffff;
 }
 
@@ -708,6 +710,9 @@ label {
 
 /*calendar*/
 .contents.calendar {
+    margin: 0 10px;
+    border-radius: 20px;
+    text-align: center;
     padding: 20px;
     background-color: #ffffff;
 }
@@ -941,9 +946,119 @@ label {
 
 
 
+/* 달력 */
+
+.calendar-wrap .cal-tit {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+#calendar {
+    width: 100%;
+}
+#calendar a {
+    color: #8e352e;
+    text-decoration: none;
+}
+#calendar ul {
+    width: 100%;
+}
+#calendar li {
+    display: block;
+    float: left;
+    width: 14.342%;
+    padding: 5px;
+    box-sizing: border-box;
+    /*border: 1px solid #ccc;*/
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+#calendar ul.weekdays {
+    height: 40px;
+}
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    /*border: none !important;*/
+    padding: 10px 6px;
+    font-size: 13px;
+}
+#calendar .days li {
+    /*height: 180px;*/
+}
+#calendar .days li:hover {
+    background: #d3d3d3;
+}
+#calendar .date {
+    text-align: center;
+    padding: 4px;
+    width: 20px;
+    float: right;
+    color: #666;
+}
+
+#calendar .date.d-day{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 4px;
+    width: 20px;
+    border-radius: 50%;
+    float: right;
+    background: #f5f5f5;
+    color: #666;
+}
+
+#calendar .event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #e4f2f2;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+#calendar .event-desc {
+    color: #666;
+    margin: 3px 0 7px 0;
+    text-decoration: none;
+}
+#calendar .other-month {
+    background: #f5f5f5;
+    color: #666;
+}
 
 
 
+.make_heart{
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    background-color: lightpink;
+    position: relative;
+    transform: rotate(45deg);
+}
+.make_heart:before, .make_heart:after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: lightpink;
+}
+
+.make_heart:before{
+    left: -50%;
+}
+.make_heart:after{
+    top: -50%;
+    left: 0;
+}
 
 
 
