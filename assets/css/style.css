@@ -25,13 +25,14 @@ body {
 }
 
 html {
-    position: relative;
     width: 100%;
     height: 100%;
 }
 
 html, body {
+    width: 100%;
     height: 100%;
+    overflow-x: hidden;
     /*overflow: auto;*/
 }
 
@@ -117,6 +118,7 @@ label {
 /* LightMode일 때 사용되는 컬러 */
 
 .container{
+    position: relative;
     overflow-x: hidden;
 }
 
