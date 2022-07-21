@@ -23,13 +23,8 @@ function getMainImgData(isSuccessCallback) {
   });
 }
 
-/**
- * 타이머로 이미지 로드 체크
- * @param $item
- * @param initFunc
- * @param retryCount
- */
-function timer($item, initFunc, retryCount = 100) {
+
+/*function timer($item, initFunc, retryCount = 100) {
   //
   let imgCheckTimer = setTimeout(() => {
     //
@@ -46,25 +41,21 @@ function timer($item, initFunc, retryCount = 100) {
       clearTimeout(imgCheckTimer);
     }
   }, 200);
-}
+}*/
 
-/**
- * 이미지 로드 promise then / catch
- * @param $items
- * @param initFunc
- */
+
 function beforeUpdate($items, initFunc) {
   getMainImgData(isProductVisualImgLoaded($items)).then((resolve) => {
     console.log(resolve);
     initFunc.call(null);
   }).catch((reject) => {
     console.log('not element\n', reject);
-    timer($items, initFunc);
+    // timer($items, initFunc);
   });
 }
 
 // product swiper
-const productPagination = ['Air Tents', 'Negative Pressue Frame', 'Function Panels'];
+/*const productPagination = ['Air Tents', 'Negative Pressue Frame', 'Function Panels'];
 const $productItems = $('.product-list .item-inner');
 //이미지 태그를 감싸고 있는 컨테이너를 전달하면 된다.
 beforeUpdate($productItems, productSlideInit);
@@ -95,7 +86,7 @@ function productSlideInit() {
       }
     }
   });
-}
+}*/
 
 // start: 20220509 수정 ====================================================
 const $sitesListItems = $('.menu-list .swiper-slide');
@@ -125,72 +116,7 @@ function sitesListSlideInit() {
       }
     }
   });
-  // let sitesSwiperTop =null;
-  /*
-  function activeTxtGroup(idx) {
-      let txtGroup= $('.sites-top .txt-group');
-      let len=txtGroup.length;
-      for (let i = 0; i < len; i++) {
-          let items = txtGroup.eq(i);
-          if( idx === i ){
-              items.css({opacity: 1});
-          }else{
-              items.css({opacity:0});
-          }
-      }
-  }
-   */
 
-  /*
-  const resizeSiteSlide=()=>{
-      if( Utils.getIsMobileSize()){
-          sitesSwiperTop=new Swiper('.experience-top', {
-              loop:true,
-              spaceBetween: 8,
-              slidesPerView: 1,
-              pagination: {
-                  el: '.experience-pagination',
-                  type: 'fraction',
-              }
-          });
-      }else{
-          sitesSwiperTop=new Swiper('.experience-top', {
-              loop:true,
-              thumbs: {
-                  swiper: sitesSwiperThumbs
-              },
-              pagination: {
-                  el: '.experience-pagination',
-                  clickable: true,
-              },
-              breakpoints: {
-                  1023: {
-                      spaceBetween: 8,
-                      slidesPerView: 1,
-                      pagination: {
-                          el: '.experience-pagination',
-                          type: 'fraction',
-                      }
-                  }
-              },
-              navigation: {
-                  nextEl: '.site-button-next',
-                  prevEl: '.site-button-prev',
-              },
-          });
-      }
-
-      sitesSwiperTop.on('transitionStart', function (e) {
-          console.log( this.activeIndex )
-          // activeTxtGroup(this.activeIndex);
-      });
-  }
-  // activeTxtGroup(0);
-  $(window).on('resize.experience-top', function(){
-      resizeSiteSlide();
-  });
-  resizeSiteSlide();
-   */
 }
 
 // end: 20220509 수정 ====================================================
@@ -224,7 +150,7 @@ function plannerSlideInit() {
 //scroll event / html 태그에 data-dir="up" 처럼 속성 표기가 이루어진다. 터치 다운시  data-dir="up" 터치 업  data-dir="down"
 // scrollDir({dir: 'up', attribute: 'data-dir'});
 
-//이벤트 대상 더미 객체 생성.
+/*//이벤트 대상 더미 객체 생성.
 const $EventObj = $('<div class="event-dummy"></div>');
 
 //이벤트 종류 선언.
@@ -274,11 +200,11 @@ $EventObj.on(SCROLL_UP_DOWN_EVENT, function (e, params) {
     $header.removeClass('add-bg');
   }
 
-});
+});*/
 
 
 //scroll event
-$(window).on('scroll.down-up', Utils.getThrottle(updateScrollEvent, 150));
+/*$(window).on('scroll.down-up', Utils.getThrottle(updateScrollEvent, 150));
 
 function updateScrollEvent(e) {
   // if( Utils.getIsMobileSize() ){ return }
@@ -297,7 +223,7 @@ $gnb.find('a').on('click.gnb', function (e) {
     $gnb.removeClass('active');
     $body.removeClass('overflow');
   }
-});
+});*/
 
 // function resizeStageEvent() {
 //   if (Utils.getIsMobileSize()) {
@@ -349,7 +275,7 @@ let scene = new ScrollMagic.Scene({triggerElement: "a#top", duration: 200, trigg
 // });
 
 //  bind scroll to anchor links
-$(document).on('click', '.gnb-list a', function (e) {
+/*$(document).on('click', '.gnb-list a', function (e) {
   let id = $(this).attr('href');
   // console.log( id )
   if ($(id).length > 0) {
@@ -390,7 +316,7 @@ function activeShortcutBtn(idx) {
       $(this).hide();
     }
   });
-}
+}*/
 
 
 // const $mainVisualVideos = $('.video-list .bg-video');
@@ -422,6 +348,7 @@ function activeShortcutBtn(idx) {
 });*/
 
 //메인 상단비주얼에 goto video 버튼 클릭시
+/*
 modalShortcutBtns.on('click.main-video', function (e) {
   videoPlayAndStop($mainVisualVideos.eq(currentCount));
 
@@ -431,10 +358,11 @@ modalShortcutBtns.on('click.main-video', function (e) {
     videoPlayAndStop($mainVisualVideos.eq(currentCount), false);
   });
 });
+*/
 
 
 // system swiper
-let systemPagination = ['For Medical Staffs', 'For Patients', 'Monitoring System'];
+/*let systemPagination = ['For Medical Staffs', 'For Patients', 'Monitoring System'];
 const systemSwiper = new Swiper('.system-list', {
   loop: false,
   effect: 'fade',
@@ -497,10 +425,10 @@ function videoPlayAndStop($item, isPlay = true) {
   } else {
     $item[0].play();
   }
-}
+}*/
 
 // start: 20220519 수정 ====================================================
-function updateVideo(idx, $items, isTween = true) {
+/*function updateVideo(idx, $items, isTween = true) {
 
   $items.each(function (i, item) {
     let video = item;
@@ -532,7 +460,7 @@ function updateVideo(idx, $items, isTween = true) {
       }
     }
   });
-}
+}*/
 
 // end: 20220519 수정 ====================================================
 
@@ -549,7 +477,7 @@ function updateVideo(idx, $items, isTween = true) {
 // start: 20220509 추가 =============================================
 // promotional video swiper
 
-const $youtubeItems = $('.youtube-list .swiper-slide');
+/*const $youtubeItems = $('.youtube-list .swiper-slide');
 //이미지 태그를 감싸고 있는 컨테이너를 전달하면 된다.
 beforeUpdate($youtubeItems, youtubeSlideInit);
 
@@ -575,7 +503,7 @@ function youtubeSlideInit() {
       }
     }
   });
-}
+}*/
 
 
 function clickGroomPopup(){
@@ -608,9 +536,9 @@ function closeBtnBride(){
 }
 
 
-window.addEventListener('click', () => {
+/*window.addEventListener('click', () => {
 
-})
+})*/
 
 
 /* 계좌번호 클릭 */
@@ -643,6 +571,7 @@ function fadeIn() {
   }
 }
 fadeIn();
+
 
 
 
