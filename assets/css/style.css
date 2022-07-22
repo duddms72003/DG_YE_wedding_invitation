@@ -38,17 +38,21 @@ body {
     user-select: none;
     background: #fff;
     color: #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
     width: 100%;
     height: 100%;
-    overflow-y: visible;
 }
 
 html, body {
     width: 100%;
+    max-width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 fieldset, img {
@@ -135,9 +139,7 @@ label {
 .container{
     position: relative;
     margin: 0 auto;
-    width: 425px;
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 .wrapper {
