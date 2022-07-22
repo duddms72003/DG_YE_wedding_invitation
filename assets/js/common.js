@@ -24,7 +24,7 @@ function getMainImgData(isSuccessCallback) {
 }
 
 
-/*function timer($item, initFunc, retryCount = 100) {
+function timer($item, initFunc, retryCount = 100) {
   //
   let imgCheckTimer = setTimeout(() => {
     //
@@ -41,7 +41,7 @@ function getMainImgData(isSuccessCallback) {
       clearTimeout(imgCheckTimer);
     }
   }, 200);
-}*/
+}
 
 
 function beforeUpdate($items, initFunc) {
@@ -50,7 +50,7 @@ function beforeUpdate($items, initFunc) {
     initFunc.call(null);
   }).catch((reject) => {
     console.log('not element\n', reject);
-    // timer($items, initFunc);
+    timer($items, initFunc);
   });
 }
 
