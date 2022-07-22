@@ -26,26 +26,27 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-    font-size: 12px !important;
-    font-family: 'Nanum Myeongjo', 'Gaegu', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-touch-callout: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    background: #fff;
-    color: #000;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 html {
     width: 100%;
     height: 100%;
+    overflow-y: visible;
+}
+
+body {
+    position: relative;
+    font-size: 12px !important;
+    font-family: 'Nanum Myeongjo', 'Gaegu', serif;
+ /*   -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;*/
+    background: #fff;
+    color: #000;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 html, body {
@@ -139,15 +140,12 @@ label {
 .container{
     position: relative;
     margin: 0 auto;
-    height: 100px;
-    overflow-y: visible;
+
 }
 
 .wrapper {
     background: url(../images/bg.jpeg);
     background-size: cover;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .contents .cnt-tit {
