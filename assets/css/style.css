@@ -28,9 +28,7 @@
 
 
 html {
-    width: 100%;
-    height: 100%;
-    overflow-y: visible;
+    position: relative;
 }
 
 body {
@@ -45,15 +43,11 @@ body {
     user-select: none;*/
     background: #fff;
     color: #000;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 html, body {
     width: 100%;
-    max-width: 100%;
     height: 100%;
-    /*overflow-x: hidden;*/
 }
 
 fieldset, img {
@@ -139,8 +133,6 @@ label {
 
 .container{
     position: relative;
-    margin: 0 auto;
-
 }
 
 .wrapper {
@@ -1009,7 +1001,8 @@ label {
     text-align: center;
     padding: 4px;
     width: 20px;
-    float: right;
+    /*float: right;*/
+    margin: 0 auto;
     color: #666;
 }
 
