@@ -557,6 +557,7 @@ function copy_to_clipboard(event) {
 
 /* 텍스트 스크롤 */
 let elementsArray = document.querySelectorAll(".scroll-y");
+
 console.log(elementsArray);
 window.addEventListener('scroll', fadeIn );
 function fadeIn() {

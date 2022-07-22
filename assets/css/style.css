@@ -52,7 +52,7 @@ html, body {
     width: 100%;
     max-width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 fieldset, img {
@@ -139,12 +139,15 @@ label {
 .container{
     position: relative;
     margin: 0 auto;
-    max-width: 100%;
+    height: 100px;
+    overflow-y: visible;
 }
 
 .wrapper {
     background: url(../images/bg.jpeg);
     background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .contents .cnt-tit {
