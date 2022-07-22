@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@font-face {
+/*@font-face {
     font-family: 'Gaegu';
     font-style: normal;
     font-weight: 300;
@@ -8,6 +8,15 @@
     src: url(https://fonts.gstatic.com/s/gaegu/v15/TuGSUVB6Up9NU57nifw-4sFtBxciPsu5uTs0PnI6bVN6hXFu_jPd.0.woff2) format('woff2');
     unicode-range: U+f9ca-fa0b, U+ff03-ff05, U+ff07, U+ff0a-ff0b, U+ff0d-ff19, U+ff1b, U+ff1d, U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6;
 }
+
+@font-face {
+    font-family: 'Nanum Myeongjo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nanummyeongjo/v20/9Btx3DZF0dXLMZlywRbVRNhxy1LueHI8j7a277xGHHfvDTP5cQDfPh1ShL-7.0.woff2) format('woff2');
+    unicode-range: U+f9ca-fa0b, U+ff03-ff05, U+ff07, U+ff0a-ff0b, U+ff0d-ff19, U+ff1b, U+ff1d, U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6;
+}*/
 
 * {
     padding: 0;
@@ -19,10 +28,8 @@
 
 body {
     position: relative;
-    width: 100%;
-    height: 100%;
     font-size: 12px !important;
-    font-family: 'Nanum Myeongjo', 'Gaegu', 'Nanum Gothic', 'helvetica', serif, 'AppleGothic', sans-serif;
+    font-family: 'Nanum Myeongjo', 'Gaegu', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-touch-callout: none;
@@ -36,12 +43,12 @@ body {
 html {
     width: 100%;
     height: 100%;
+    overflow-y: visible;
 }
 
 html, body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
 }
 
 fieldset, img {
@@ -127,13 +134,15 @@ label {
 
 .container{
     position: relative;
+    margin: 0 auto;
+    width: 425px;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
 .wrapper {
     background: url(../images/bg.jpeg);
     background-size: cover;
-    /*background-color: #fffdf9;*/
 }
 
 .contents .cnt-tit {
@@ -774,8 +783,6 @@ label {
 
 .account-txt span {
     font-size: 18px;
-    font-family: 'Gaegu', cursive!important;
-    font-weight: bold;
 }
 
 .account-txt span:first-child {
@@ -813,22 +820,25 @@ label {
     width: 100%;
     padding: 15px;
     display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Gaegu', cursive;
+    font-size: 14px;
     color: #000000;
 }
 
 /*footer*/
 .footer .contents {
-    padding: 30px;
-    font-size: 13px;
+    padding: 25px;
+    font-size: 15px;
     text-align: center;
+    font-family: 'Gaegu', sans-serif;
 }
 
 .footer .btm {
     background-color: #d4bda2;
     height: 93px;
+    background-image: url("../images/bg_btm_img.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -866,6 +876,7 @@ label {
 
 .popup-dialog {
     position: absolute;
+    overflow-y: auto;
     width: 93% !important;
     top: 50%;
     left: 50%;
@@ -875,7 +886,7 @@ label {
     background-color: #1d1d1d;
     border: 1px solid #595959;
     border-radius: 10px;
-    overflow-y: auto;
+    font-family: 'Gaegu', cursive;
 }
 
 .popup-contents {
@@ -904,9 +915,7 @@ label {
 .popup.account .popup-header {
     position: relative;
     padding: 20px;
-    font-family: 'Gaegu', cursive !important;
     font-size: 22px;
-    font-weight: bold;
     color: #1d1d1d;
     background-color: #fadb6c;
 }
@@ -961,7 +970,6 @@ label {
     text-align: center;
     margin-bottom: 10px;
     font-size: 17px;
-    font-family: cursive;
 }
 #calendar {
     width: 100%;
