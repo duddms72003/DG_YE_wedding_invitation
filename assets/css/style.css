@@ -29,6 +29,7 @@
 
 html {
     position: relative;
+    overflow: auto;
 }
 
 body {
@@ -325,7 +326,6 @@ label {
 
 
 
-/*test*/
  .bg-cnt {
     position: relative;
     width: 100%;
@@ -525,12 +525,6 @@ label {
 
 .contents.calling .parents .tit {
     font-size: 13px !important;
-    width: 60%;
-    padding: 7px 10px;
-    border-radius: 20px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    background-color:rgba(212, 189, 162, 0.3);
 }
 
 .contents.calling .parents .item {
@@ -562,6 +556,7 @@ label {
 .contents.calling .parents .grid-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
 }
 
 .contents.calling .parents .tit {
@@ -946,6 +941,7 @@ label {
 
 
 /* 텍스트 스크롤 */
+/*
 .scroll-y {
     transform: translateY(20vh);
     -webkit-transition-delay: .5s;
@@ -962,6 +958,47 @@ label {
     -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
     transform: translateY(0px) rotate(0deg) translateZ(0);
 }
+*/
+
+
+
+.booger {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 49%;
+    margin: 10px;
+    padding: 100px 0;
+    background-color: darkgray;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.scroll-y {
+    transform: translateY(20vh);
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    opacity: 0;
+}
+
+
+.scrolled {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+ }
+
+
+
+
+
+
+
 
 
 

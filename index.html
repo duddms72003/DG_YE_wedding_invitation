@@ -71,6 +71,15 @@
         <p>언제나 함께 웃을 수 있는 하나가 되려 합니다.</p>
         <p>행복한 시작의 순간을 소중한 분들과 함께하고 싶습니다.</p>
       </div>
+
+<!--      <div class="booger"></div>
+      <div class="booger"></div>
+      <div class="booger"></div>
+      <div class="booger"></div>
+      <div class="booger"></div>
+      <div class="booger"></div>-->
+
+
       <div class="txt-cnt btm scroll-y">
         <p>이명진 <strong class="dot">·</strong> 전복순<span class="sm-txt">의 장남</span> <strong class="m-txt">동근</strong></p>
         <p>조기훈 <strong class="dot">·</strong> 박정림<span class="sm-txt">의 장녀</span> <strong class="m-txt">영은</strong></p>
@@ -769,13 +778,43 @@
 
 
 
-/*  $(window).load(function () {
+
+/*  $(window).on('load', function (){
     $('body').sakura();
+  })*/
+
+
+  window.onload = function () {
+    $('body').sakura();
+    document.addEventListener('scroll', function (){
+      showIt();
+    })
+  }
+
+
+/*  document.addEventListener('scroll', function (){
+    showIt();
   });*/
 
-  $(window).on('load', function (){
-    $('body').sakura();
-  })
+/*  window.addEventListener('scroll', function () {
+    showIt();
+  })*/
+
+
+  /*  window.onload = function () {
+      window.showIt();
+    }*/
+
+ /* window.addEventListener('scroll', function (){
+    showIt();
+  })*/
+
+  /*
+    window.addEventListener('load', function () {
+      window.showIt();
+    })*/
+
+
 
 </script>
 
