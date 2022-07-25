@@ -514,7 +514,6 @@ label {
     font-family: "Noto Sans KR", sans-serif;
 }
 
-
 .contents.calling .parents .calling-parents {
     background: #f0e8e0;
     color: #ba8f58;
@@ -526,6 +525,12 @@ label {
 
 .contents.calling .parents .tit {
     font-size: 13px !important;
+    width: 60%;
+    padding: 7px 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    background-color:rgba(212, 189, 162, 0.3);
 }
 
 .contents.calling .parents .item {
@@ -590,6 +595,7 @@ label {
     overflow: hidden;
     border-top-right-radius: 200px;
     border-top-left-radius: 200px;
+    box-shadow: 0 0 10px 0 rgba(15, 15, 21, 0.05);
 }
 
 .contents.gallery .gallery-list .image-cnt > img {
