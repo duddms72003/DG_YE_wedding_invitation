@@ -29,7 +29,7 @@
 
 html {
     position: relative;
-    overflow: auto;
+    /*overflow: scroll;*/
 }
 
 body {
