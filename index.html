@@ -3,12 +3,10 @@
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-<!-- test
+<!--  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
   <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  -->
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+
   <title>DG_YE's Wedding day</title>
 
   <!-- inject:css -->
@@ -71,6 +69,7 @@
         <p>언제나 함께 웃을 수 있는 하나가 되려 합니다.</p>
         <p>행복한 시작의 순간을 소중한 분들과 함께하고 싶습니다.</p>
       </div>
+
 
 <!--      <div class="booger"></div>
       <div class="booger"></div>
@@ -784,12 +783,16 @@
   })*/
 
 
-  window.onload = function () {
+  window.onload = function (e) {
+    e.preventDefault();
     $('body').sakura();
     document.addEventListener('scroll', function (){
       showIt();
+      // alert(2);
     })
   }
+
+
 
 
 /*  document.addEventListener('scroll', function (){

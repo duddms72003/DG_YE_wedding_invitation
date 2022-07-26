@@ -26,37 +26,44 @@
     box-sizing: border-box;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;} /* IE < 8 */
+
 
 html {
     position: relative;
-    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    /*overflow-x: hidden;*/
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -ms-overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
     position: relative;
     font-size: 12px !important;
     font-family: 'Nanum Myeongjo', 'Gaegu', serif;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+    color: #000;
+    padding: 0;
+    margin: 0;
+
  /*   -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-touch-callout: none;
     -ms-user-select: none;
     -webkit-user-select: none;
     user-select: none;*/
-    background: #fff;
-    color: #000;
+
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
 }
 
 fieldset, img {
@@ -140,8 +147,10 @@ label {
 
 /* LightMode일 때 사용되는 컬러 */
 
-.container{
+.container {
     position: relative;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .wrapper {
