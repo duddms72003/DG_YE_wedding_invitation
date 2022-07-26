@@ -584,7 +584,7 @@ label {
     overflow: hidden;
     border-top-right-radius: 200px;
     border-top-left-radius: 200px;
-    box-shadow: 0 0 15px 0 rgba(15, 15, 21, 0.15);
+    box-shadow: 0 0 10px 0 rgba(15, 15, 21, 0.05);
 }
 
 .contents.gallery .gallery-list .image-cnt > img {
