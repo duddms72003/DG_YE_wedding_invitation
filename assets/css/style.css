@@ -26,25 +26,12 @@
     box-sizing: border-box;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-}
-.clearfix:after {clear: both;}
-.clearfix {zoom: 1;} /* IE < 8 */
-
-
 html {
     position: relative;
-    height: 100%;
-    /*overflow-x: hidden;*/
+    width: 100%;
 }
 
 body {
-    max-width: 100%;
     position: relative;
     font-size: 12px !important;
     font-family: 'Nanum Myeongjo', 'Gaegu', serif;
@@ -53,17 +40,10 @@ body {
     color: #000;
     padding: 0;
     margin: 0;
-
- /*   -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-touch-callout: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;*/
-
 }
 
 html, body {
+    height: 100%;
 }
 
 fieldset, img {
@@ -149,8 +129,6 @@ label {
 
 .container {
     position: relative;
-    overflow-x: hidden;
-    height: 100%;
 }
 
 .wrapper {
@@ -223,6 +201,8 @@ label {
 
 /*start*/
 .contents.start {
+    position: relative;
+    overflow-x: hidden; /* 벚꽃이 해당 영역 벗어나지 못하도록*/
     padding: 70px 0;
 }
 
