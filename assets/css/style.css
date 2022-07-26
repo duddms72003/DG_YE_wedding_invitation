@@ -224,8 +224,8 @@ label {
     position: relative;
     font-size: 14px;
     margin-top: 20px;
-    margin-bottom: 0.688rem;
-    padding-bottom: 0.688rem;
+    margin-bottom: 13px;
+    padding-bottom: 13px;
     font-weight: 300;
     line-height: 1.1;
     color: #483a33;
@@ -314,11 +314,8 @@ label {
     color: #ffffff;
     line-height: 100px;
     letter-spacing: 10px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
-    /* background-image: url(../images/flower1.jpg);
-    background-size: cover;
-    background-attachment: fixed; */
 }
 
 
@@ -587,7 +584,7 @@ label {
     overflow: hidden;
     border-top-right-radius: 200px;
     border-top-left-radius: 200px;
-    box-shadow: 0 0 10px 0 rgba(15, 15, 21, 0.05);
+    box-shadow: 0 0 15px 0 rgba(15, 15, 21, 0.15);
 }
 
 .contents.gallery .gallery-list .image-cnt > img {
@@ -665,6 +662,7 @@ label {
 
 .contents.location .map-icon a.google-map {
     background-image: url("../images/location_googlemap.png");
+    border-radius: 0;
 }
 
 .contents.location .map-icon a.naver-map {
@@ -717,6 +715,10 @@ label {
 
 .swiper-container {
     z-index: 0
+}
+
+.swiper-container.gallery-top {
+    padding-top: 10px;
 }
 
 /*calendar*/
