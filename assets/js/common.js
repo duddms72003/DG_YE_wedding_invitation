@@ -582,7 +582,7 @@ function showIt() {
   const toBeShown = document.querySelectorAll(".scroll-y"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
 
   // consider taking this outside of the loop and resetting it on window resize to optimize the loop
-  const halfScreen = window.innerHeight / 2;
+  const halfScreen = window.innerHeight / 1.5;
 
   toBeShown.forEach((item, i) => {
     const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);
