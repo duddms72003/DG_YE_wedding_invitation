@@ -973,13 +973,20 @@ label {
 }
 .modalBox {
     position: absolute;
-    top: 44%;
+    top: 42%;
 }
 .img{
     cursor: pointer;
 }
 
-
+/*
+.not_scroll{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+*/
 
 
 
