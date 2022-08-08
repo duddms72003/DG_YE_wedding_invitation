@@ -536,12 +536,10 @@ function closeBtnBride(){
 }
 
 
-/*window.addEventListener('click', () => {
-
-})*/
 
 
-/* 계좌번호 클릭 */
+
+/* 계좌번호 복사 */
 function copy_to_clipboard(event) {
   const copyText = event.target.parentNode.previousElementSibling;
   copyText.select();
@@ -553,27 +551,22 @@ function copy_to_clipboard(event) {
 
 
 
+/* 이미지 클릭 시 확대 */
+$(function(){
+//     이미지 클릭시 해당 이미지 모달
+  $(".img").click(function(e){
+    e.preventDefault();
+    let img = new Image();
+    img.src = $(this).attr("src")
+    $('.modalBox').html(img);
+    $(".modal").show();
+  });
+// 모달 클릭할때 이미지 닫음
+  $(".modal").click(function (e) {
+    $(".modal").toggle();
+  });
+});
 
-
-/* 텍스트 스크롤 */
-/*
-let elementsArray = document.querySelectorAll(".scroll-y");
-
-console.log(elementsArray);
-window.addEventListener('scroll', fadeIn );
-function fadeIn() {
-  for (let i = 0; i < elementsArray.length; i++) {
-    let elem = elementsArray[i]
-    let distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-    if (distInView < 0) {
-      elem.classList.add("inView");
-    } else {
-      elem.classList.remove("inView");
-    }
-  }
-}
-fadeIn();
-*/
 
 
 
@@ -643,4 +636,6 @@ function showIt() {
 //
 // // 20220519 추가 - System & Interface youtube modal
 //   $('.system-youtube .js-modal-btn').modalVideo();
+
+
 
