@@ -508,8 +508,8 @@ label {
     object-fit: cover;
 }
 
-.contents.gallery .gallery-list + .date {
-    margin-top: 30px;
+.contents.gallery .date {
+    padding-top: 30px;
     font-size: 12px;
 }
 
@@ -949,6 +949,7 @@ label {
 
 /* //슬라이드 팝업창 */
 .slide-overlay {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -959,11 +960,12 @@ label {
 }
 .slide__container {
     position: absolute;
-    width: 90%;
+    width: 95%;
     height: 458px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
     overflow: hidden;
 }
 .slides {
@@ -982,8 +984,8 @@ label {
 /* 슬라이드 버튼 */
 .slide-btn {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: none;
     background-color: white;
@@ -993,10 +995,10 @@ label {
     z-index: 9;
 }
 .--prev {
-    left: 20%;
+    left: 7%;
 }
 .--next {
-    right: 20%;
+    right: 7%;
 }
 /* 닫기버튼 */
 .close-btn {

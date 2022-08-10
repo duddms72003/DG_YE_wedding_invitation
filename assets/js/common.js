@@ -552,7 +552,7 @@ function copy_to_clipboard(event) {
 
 
 /* 이미지 클릭 시 확대 */
-$(function(){
+/*$(function(){
 //     이미지 클릭시 해당 이미지 모달
   $(".img").click(function(e){
     e.preventDefault();
@@ -565,80 +565,13 @@ $(function(){
   $(".modal").click(function (e) {
     $(".modal").toggle();
   });
-});
+});*/
 
 
 
 
 
-function showIt() {
-  const toBeShown = document.querySelectorAll(".scroll-y"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
-
-  // consider taking this outside of the loop and resetting it on window resize to optimize the loop
-  const halfScreen = window.innerHeight / 1.5;
-
-  toBeShown.forEach((item, i) => {
-    const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);
-
-    if (item.offsetTop - window.scrollY < halfScreen) {
-      item.classList.add('scrolled');
-    } else {
-      item.classList.remove('scrolled');
-    }
-  })
-
-}
-
-/*window.addEventListener('scroll', showIt);*/
-
-
-
-
-
-// banner swiper - 모바일에서만 작동.
-// bannerSwiperInit();
-// $(window).on('resize', () => {
-//   bannerSwiperInit();
-// });
-//
-// function bannerSwiperInit() {
-//   if (Utils.getIsMobileSize()) {
-//     const bannerSwiper = new Swiper('.banner-list', {
-//       slidesPerView: 2,
-//       autoplay: {
-//         delay: 3000,
-//         disableOnInteraction: false
-//       },
-//       loop: true,
-//       speed: 800,
-//       on: {
-//         resize: () => {
-//           if (!Utils.getIsMobileSize()) {
-//             bannerSwiper.destroy();
-//           }
-//         }
-//       }
-//     });
-//   }
-// }
-
-
-
-
-// end: 20220509 추가 =============================================
-
-//
-// //하단 youtube 비디오 플레이
-//   $('.press-video .js-modal-btn').modalVideo();
-//
-// // 20220509 추가 - promotional video youtube modal
-//   $('.youtube-item .js-modal-btn').modalVideo();
-//
-// // 20220519 추가 - System & Interface youtube modal
-//   $('.system-youtube .js-modal-btn').modalVideo();
-
-
-
+/* 이미지 클릭 시 팝업 및 슬라이드 */
 const overlay = document.querySelector(".slide-overlay");
 let slides = document.querySelectorAll(".slides > li");
 let slidePhoto = document.querySelectorAll(".slides > li > img");
@@ -812,3 +745,35 @@ function bulletIndex() {
   index %= bullets.length;
   bullets[index].classList.add("on");
 }
+
+
+
+
+
+
+
+
+
+function showIt() {
+  const toBeShown = document.querySelectorAll(".scroll-y"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
+
+  // consider taking this outside of the loop and resetting it on window resize to optimize the loop
+  const halfScreen = window.innerHeight / 1.5;
+
+  toBeShown.forEach((item, i) => {
+    const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);
+
+    if (item.offsetTop - window.scrollY < halfScreen) {
+      item.classList.add('scrolled');
+    } else {
+      item.classList.remove('scrolled');
+    }
+  })
+
+}
+
+/*window.addEventListener('scroll', showIt);*/
+
+
+
+
