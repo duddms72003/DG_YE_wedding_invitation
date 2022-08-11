@@ -961,11 +961,12 @@ label {
 .slide__container {
     position: absolute;
     width: 95%;
-    height: 458px;
+    max-height: 800px;
+    min-height: 600px;
+    /*height: 458px;*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
     overflow: hidden;
 }
 .slides {
@@ -995,10 +996,10 @@ label {
     z-index: 9;
 }
 .--prev {
-    left: 7%;
+    left: 5%;
 }
 .--next {
-    right: 7%;
+    right: 5%;
 }
 /* 닫기버튼 */
 .close-btn {
@@ -1009,6 +1010,7 @@ label {
 }
 
 /* bullet */
+/*
 #bullets {
     position: absolute;
     bottom: 20%;
@@ -1032,6 +1034,7 @@ label {
 #bullets > li > a.on {
     background-color: tomato;
 }
+*/
 
 /*테스트*/
 
