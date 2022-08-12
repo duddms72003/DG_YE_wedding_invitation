@@ -961,7 +961,7 @@ label {
 .slide__container {
     position: absolute;
     width: 95%;
-    height: 710px;
+    height: 600px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
