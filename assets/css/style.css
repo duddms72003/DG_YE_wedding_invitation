@@ -1058,7 +1058,6 @@ label {
 
 .slides > li > img {
     float: left;
-    border-radius: 5px;
 }
 
 .slides > li > img.pos-desc{
