@@ -592,22 +592,29 @@ label {
     padding-top: 6px;
 }
 
-.contents.location .transportation {
-    padding: 15px;
-    background-color: #ffffff;
+
+.contents.notice {
+
 }
 
-.contents.location .transportation .list {
+.contents.notice .transportation {
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 15px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.contents.notice .transportation .list {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
 }
 
-.contents.location .transportation p {
+.contents.notice .transportation p {
     padding-bottom: 10px;
     font-size: 13px;
 }
 
-.contents.location .transportation .detail {
+.contents.notice .transportation .detail {
     font-size: 12px;
     color: #999999;
 }
@@ -685,9 +692,46 @@ label {
 }
 
 
-.account-txt {
+
+.account-box{
     width: 100%;
-    /* display: table; */
+    display: table;
+    padding: 14px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "Noto Sans KR", sans-serif!important;
+    font-size: 13px;
+}
+
+.account-box p{
+    display: table-cell;
+}
+
+.account-box p:first-child{
+    width: 30%;
+}
+
+.account-box p:last-child{
+    width: 70%;
+}
+
+.account-txt{
+
+}
+
+.account-num .copy-btn{
+
+}
+
+.account-num .copy-btn > span{
+
+}
+
+
+
+/*.account-txt {
+    width: 100%;
     text-align: center;
 }
 
@@ -732,7 +776,10 @@ label {
     display: inline-block;
     font-size: 14px;
     color: #000000;
-}
+}*/
+
+
+
 
 /*footer*/
 .footer .contents {

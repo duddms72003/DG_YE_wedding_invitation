@@ -758,8 +758,8 @@ let start_x, end_x;
 const IMAGE_WIDTH = 375;
 const images = document.querySelectorAll(".img")
 
-images.addEventListener('touchstart', touch_start);
-images.addEventListener('touchend', touch_end);
+// images.addEventListener('touchstart', touch_start);
+// images.addEventListener('touchend', touch_end);
 
 function prev(){
   if(curPos > 0){
