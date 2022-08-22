@@ -732,13 +732,12 @@ label {
 }
 
 .account-box .bank{
-    padding-right: 10px;
-
 }
 
 .account-box .account-input{
-    width: 50%;
+    width: 53%;
     font-size: 14px;
+    text-align: right;
 }
 
 .account-txt{
@@ -1034,17 +1033,18 @@ label {
 .slide__container {
     position: absolute;
     width: 97%;
-    /* height: 560px; */
-    height: 80%;
+    height: 560px;
+    /* height: 80%; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    border-radius: 5px;
 }
 .slides {
-    /*width: 600%;*/
     position: relative;
     left: 0;
+    height 100%;
 }
 .slides::after {
     content: "";
@@ -1052,17 +1052,17 @@ label {
     clear: both;
 }
 .slides > li {
-    float: left;
     height: 100vh;
 }
 
 .slides > li > img {
-    float: left;
+    border-radius: 5px;
 }
 
-.slides > li > img.pos-desc{
-    position: relative;
+.slides > li:first-child > img {
+  
 }
+
 
 
 /* 슬라이드 버튼 */
@@ -1268,6 +1268,7 @@ label {
     .account-box .account-input{
         width: 100%;
         font-size: 14px;
+        text-align: left;
     }
 
 
