@@ -697,11 +697,15 @@ label {
     width: 100%;
     display: table;
     padding: 14px;
-    border: 1px solid darkgrey;
-    border-radius: 5px;
     margin-bottom: 10px;
     font-family: "Noto Sans KR", sans-serif!important;
     font-size: 13px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.account-box:last-child{
+    margin-bottom: 0;
 }
 
 .account-box p{
@@ -710,11 +714,24 @@ label {
 
 .account-box p:first-child{
     width: 30%;
+    border-right: 1px solid gainsboro;
+
 }
 
 .account-box p:last-child{
     width: 70%;
 }
+
+.account-box .bank{
+    padding-right: 5px;
+
+}
+
+.account-box .account-input{
+    width: 50%;
+}
+
+
 
 .account-txt{
 
@@ -1206,6 +1223,20 @@ label {
     position: relative;
     font-weight: bold;
     color: #ffffff;
+}
+
+
+
+@media (max-width: 360px) {
+    .account-box p:first-child{
+        width: 50%;
+    }
+
+    .account-box p:last-child{
+        width: 50%;
+        text-align: left;
+    }
+
 }
 
 

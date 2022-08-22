@@ -540,6 +540,7 @@ function closeBtnBride(){
 
 
 /* 계좌번호 복사 */
+/*
 function copy_to_clipboard(event) {
   const copyText = event.target.parentNode.previousElementSibling;
   copyText.select();
@@ -547,6 +548,17 @@ function copy_to_clipboard(event) {
   document.execCommand("Copy");
   alert('복사되었습니다.\n감사합니다. \n늘 행복이 가득하세요! \n♥ 영은 동근 올림 ♥');
 }
+*/
+
+function copy_to_clipboard(event) {
+  const copyText = event.target;
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("Copy");
+  alert('복사되었습니다.\n감사합니다. \n늘 행복이 가득하세요! \n♥ 영은 동근 올림 ♥');
+}
+
+
 
 
 
