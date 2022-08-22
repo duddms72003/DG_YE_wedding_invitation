@@ -1034,12 +1034,12 @@ label {
 .slide__container {
     position: absolute;
     width: 97%;
-    height: 560px;
+    /* height: 560px; */
+    height: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    border-radius: 5px;
 }
 .slides {
     /*width: 600%;*/
@@ -1053,7 +1053,20 @@ label {
 }
 .slides > li {
     float: left;
+    height: 100vh;
 }
+
+.slides > li > img {
+    float: left;
+    border-radius: 5px;
+}
+
+.slides > li > img.pos-desc{
+    position: relative;
+    bottom: 0%;
+}
+
+
 /* 슬라이드 버튼 */
 .slide-btn {
     position: absolute;
