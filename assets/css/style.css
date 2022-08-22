@@ -960,12 +960,13 @@ label {
 }
 .slide__container {
     position: absolute;
-    width: 95%;
+    width: 97%;
     height: 560px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    border-radius: 5px;
 }
 .slides {
     /*width: 600%;*/
@@ -989,7 +990,8 @@ label {
     border: none;
     background-color: white;
     cursor: pointer;
-    top: 50%;
+    /*top: 50%;*/
+    bottom: 0;
     transform: translateY(-50%);
     z-index: 9;
 }
@@ -1003,12 +1005,18 @@ label {
 .close-btn {
     position: absolute;
     padding: 1em;
-    top: 2em;
-    right: 15%;
+    bottom: 2em;
+    /*right: 15%;*/
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #ba8f58;
 }
 
 /* bullet */
 #bullets {
+    display: none;
     position: absolute;
     bottom: 20%;
     left: 50%;

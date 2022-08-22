@@ -601,6 +601,10 @@ document.querySelector(".close-btn").addEventListener("click", () => {
   overlay.style.display = "none";
 });
 
+/*document.querySelector(".slide-overlay").addEventListener("click", () => {
+  overlay.style.display="none"
+})*/
+
 // bullet 이미지 개수에 맞게 생성하는 함수
 function createBullets() {
   // bullet들의 리스트를 생성
