@@ -723,7 +723,7 @@ label {
     width: 1px;
     position: absolute;
     right: -4px;
-    background-color: #fadb6c;
+    background-color: #ba8f58;
 }
 
 
@@ -738,6 +738,7 @@ label {
 
 .account-box .account-input{
     width: 50%;
+    font-size: 14px;
 }
 
 .account-txt{
@@ -1237,13 +1238,27 @@ label {
 
 @media (max-width: 360px) {
     .account-box p:first-child{
-        width: 50%;
+        width: 40%;
     }
 
     .account-box p:last-child{
-        width: 50%;
+        width: 100%;
         text-align: left;
     }
+
+    .account-box p:first-child:after{
+        display: none;
+    }
+
+    .account-box .bank{
+        display: block;
+    }
+
+    .account-box .account-input{
+        width: 100%;
+        font-size: 14px;
+    }
+
 
 }
 
