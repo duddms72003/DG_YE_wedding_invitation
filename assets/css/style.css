@@ -314,7 +314,7 @@ label {
     color: #ffffff;
     line-height: 100px;
     letter-spacing: 10px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -713,10 +713,19 @@ label {
 }
 
 .account-box p:first-child{
+    position: relative;
     width: 30%;
-    border-right: 1px solid gainsboro;
-
 }
+
+.account-box p:first-child:after{
+    content: '';
+    height: 15px;
+    width: 1px;
+    position: absolute;
+    right: -4px;
+    background-color: #fadb6c;
+}
+
 
 .account-box p:last-child{
     width: 70%;
@@ -731,10 +740,9 @@ label {
     width: 50%;
 }
 
-
-
 .account-txt{
-
+    margin-top: 25px;
+    font-size: 15px;
 }
 
 .account-num .copy-btn{
@@ -1071,7 +1079,7 @@ label {
 .close-btn {
     position: absolute;
     padding: 1em;
-    bottom: 25px;
+    bottom: 30px;
     right: 50%;
     transform: translateX(50%);
     border-radius: 10px;
