@@ -256,7 +256,7 @@ label {
 
 .contents.invitation .txt-cnt.btm {
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0 65px 0;
 }
 
 .contents.invitation .txt-cnt .sm-txt {
@@ -408,6 +408,7 @@ label {
     padding: 12px 0;
     font-size: 12px;
     text-align: center;
+    letter-spacing: 1px;
     /*box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);*/
 }
 
@@ -713,7 +714,7 @@ label {
 }
 
 .account-box .account-input {
-    width: 53%;
+    width: 55%;
     font-size: 14px;
     text-align: right;
 }
