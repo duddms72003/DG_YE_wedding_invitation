@@ -765,13 +765,15 @@
 
   window.onload = function (e) {
     e.preventDefault();
-    let IFrame = document.querySelector('iframe')
-    IFrame.style.backgroundColor = "pink";
 
     setTimeout(function (){
-      IFrame.src = 'about: blank';
-      IFrame.frameBorder = "0";
-      IFrame.allowTransparency="true";
+
+      // let IFrame = document.querySelector('iframe')
+      // IFrame.src = 'about: blank';
+      // IFrame.style.backgroundColor = "transparent";
+      // IFrame.frameBorder = "0";
+      // IFrame.allowTransparency="true";
+
       $(".loading").fadeOut();
     }, 3000);
     $('body').sakura();
