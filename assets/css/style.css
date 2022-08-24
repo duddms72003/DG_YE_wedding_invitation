@@ -105,7 +105,24 @@ label {
 }
 
 
-/* LightMode일 때 사용되는 컬러 */
+.loading{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.loading_txt{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
 
 .container {
     position: relative;
