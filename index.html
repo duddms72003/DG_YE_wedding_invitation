@@ -27,7 +27,7 @@
 <div class="loading">
   <div class="loading_wapper">
 <!--    <iframe style="" src="https://embed.lottiefiles.com/animation/1426" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-    <iframe src="https://embed.lottiefiles.com/animation/95910" allowtransparency="true" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="background-color: #ffffff"></iframe>
+    <iframe src="https://embed.lottiefiles.com/animation/95910" width="300" height="150" allowtransparency="true" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="background-color: #ffffff"></iframe>
   </div>
 </div>
 
@@ -765,11 +765,11 @@
 
   window.onload = function (e) {
     e.preventDefault();
+    let IFrame = document.querySelector('iframe')
+    IFrame.style.backgroundColor = "white";
 
     setTimeout(function (){
-      let IFrame = document.querySelector('iframe')
       IFrame.src = 'about: blank';
-      IFrame.style.backgroundColor = "#ffffff";
       IFrame.frameBorder = "0";
       IFrame.allowTransparency="true";
       $(".loading").fadeOut();
