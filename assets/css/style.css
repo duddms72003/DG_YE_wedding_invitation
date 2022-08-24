@@ -115,13 +115,20 @@ label {
     z-index: 1000;
 }
 
-.loading_txt{
+.loading_wapper{
+    /*position: absolute;*/
+    /*top: 35%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    position: relative;
+}
+
+.loading_wapper iframe{
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-
-
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
