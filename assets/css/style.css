@@ -120,13 +120,11 @@ label {
     top: 35%;
     left: 50%;
     transform: translateX(-50%);*/
-
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
     height: 100vh;
     overflow: hidden;
-
 }
 
 .loading_wapper iframe{
@@ -134,7 +132,10 @@ label {
     top: 35%;
     left: 50%;
     transform: translateX(-50%);
+    background-color: transparent;
 }
+
+
 
 .container {
     position: relative;
