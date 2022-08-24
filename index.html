@@ -27,7 +27,8 @@
 <div class="loading">
   <div class="loading_wapper">
 <!--    <iframe style="" src="https://embed.lottiefiles.com/animation/1426" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-    <iframe src="https://embed.lottiefiles.com/animation/95910" width="300" height="150" allowtransparency="true" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="background-color: #ffffff"></iframe>
+    <!-- <iframe src="https://embed.lottiefiles.com/animation/95910" width="300" height="150" allowtransparency="true" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="background-color: #ffffff"></iframe> -->
+    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_rc6evhf4.json" background="transparent"  speed="1"  style="width: 200px; height: 200px;  position: absolute; top: 30%; left: 50%; transform: translateX(-50%);" loop autoplay class="lottie"></lottie-player>
   </div>
 </div>
 
@@ -768,11 +769,11 @@
 
     setTimeout(function (){
 
-      // let IFrame = document.querySelector('iframe')
-      // IFrame.src = 'about: blank';
-      // IFrame.style.backgroundColor = "transparent";
-      // IFrame.frameBorder = "0";
-      // IFrame.allowTransparency="true";
+      let IFrame = document.querySelector('iframe')
+      IFrame.src = 'about: blank';
+      IFrame.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+      IFrame.frameBorder = "0";
+      IFrame.allowTransparency="true";
 
       $(".loading").fadeOut();
     }, 3000);
@@ -793,6 +794,7 @@
 <script src="./assets/js/Utils.js"></script>
 <script src="./assets/js/common.js"></script>
 <script src="./assets/js/flower.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <!-- endinject -->
 
 </body>
