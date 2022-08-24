@@ -765,7 +765,9 @@
 
   window.onload = function (e) {
     e.preventDefault();
-    $(".loading").fadeOut();
+    setTimeout(function (){
+      $(".loading").fadeOut();
+    }, 3000);
     $('body').sakura();
     document.addEventListener('scroll', function (){
       showIt();
