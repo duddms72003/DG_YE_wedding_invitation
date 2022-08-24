@@ -27,7 +27,7 @@
 <div class="loading">
   <div class="loading_wapper">
 <!--    <iframe style="" src="https://embed.lottiefiles.com/animation/1426" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-    <iframe src="https://embed.lottiefiles.com/animation/95910" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="background-color: #ffffff"></iframe>
+    <iframe src="https://embed.lottiefiles.com/animation/95910" allowtransparency="true" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="background-color: transparent"></iframe>
   </div>
 </div>
 
@@ -765,7 +765,13 @@
 
   window.onload = function (e) {
     e.preventDefault();
+
     setTimeout(function (){
+     /* IFrame = document.querySelector('iframe')
+      IFrame.src = 'about: blank';
+      IFrame.style.backgroundColor = "transparent";
+      IFrame.frameBorder = "0";
+      IFrame.allowTransparency="true";*/
       $(".loading").fadeOut();
     }, 3000);
     $('body').sakura();
