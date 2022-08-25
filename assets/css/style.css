@@ -116,10 +116,6 @@ label {
 }
 
 .loading_wapper{
-/*    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);*/
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
@@ -127,14 +123,12 @@ label {
     overflow: hidden;
 }
 
-.loading_wapper iframe{
+.loading_wapper .lottie-txt{
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: transparent;
+     top: 54%; 
+     left: 50%; 
+     transform: translateX(-50%);
 }
-
 
 
 .container {
@@ -213,14 +207,29 @@ label {
 .contents.start {
     position: relative;
     overflow-x: hidden; /* 벚꽃이 해당 영역 벗어나지 못하도록*/
-    padding: 70px 0;
+    padding-top: 70px;
+    text-align: center;
+    /* background-color: #fff; */
 }
 
 .contents.start .txt-cnt {
-    text-align: center;
     margin-bottom: 40px;
     font-family: 'Nanum Myeongjo', sans-serif !important;
 }
+
+.contents.start .img-cnt{
+    position: relative
+}
+
+/* .contents.start .img-cnt .gradient{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../images/gradient.png");
+    width: 100%;
+    height: 165px;
+} */
 
 .contents.start .main-tit {
     width: 100%;
@@ -272,6 +281,8 @@ label {
 
 .contents.invitation {
     text-align: center;
+    padding: 70px 0;
+    /* background-color: #fff; */
 }
 
 .contents.invitation .txt-cnt {
@@ -286,7 +297,7 @@ label {
 
 .contents.invitation .txt-cnt.btm {
     position: relative;
-    padding: 50px 0 65px 0;
+    padding-top: 50px;
 }
 
 .contents.invitation .txt-cnt .sm-txt {
@@ -314,10 +325,8 @@ label {
 .contents.calling .img-cnt {
     position: relative;
     height: 100px;
-    /* box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
     background-color: #d4bda2;
 }
-
 
 .contents.calling .img-cnt p {
     text-align: center;
@@ -327,7 +336,6 @@ label {
     font-size: 14px;
     font-weight: bold;
 }
-
 
 .bg-cnt {
     position: relative;
@@ -527,7 +535,7 @@ label {
 
 
 .contents.location {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -631,7 +639,7 @@ label {
 
 /*menu*/
 .contents.menu {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -664,7 +672,7 @@ label {
 
 /*account*/
 .contents.account {
-    padding: 50px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
