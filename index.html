@@ -26,8 +26,8 @@
 
 <div class="loading">
   <div class="loading_wapper">
-    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_rc6evhf4.json" background="transparent"  speed="1"  style="width: 150px; height: 150px;  position: absolute; top: 35%; left: 50%; transform: translateX(-50%);" loop autoplay class="lottie"></lottie-player>
-    <div class="lottie-txt">동근 &#9829; 영은</div>
+    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_rc6evhf4.json" speed="1" loop autoplay class="lottie-player"></lottie-player>
+    <div class="lottie-txt" style="text-align: center;">동근 &#9829; 영은</div>
   </div>
 </div>
 
@@ -764,8 +764,18 @@
 
   window.onload = function (e) {
     e.preventDefault();
+    function scrollDisable(){
+      $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+      });
+    }
+    function scrollAble(){
+      $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+    }
 
     setTimeout(function (){
+      scrollDisable();
+      scrollAble();
       $(".loading").fadeOut();
     }, 2000);
 
