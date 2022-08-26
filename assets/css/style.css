@@ -124,9 +124,7 @@ label {
 }
 
 .loading .lottie-player {
-    width: 150px;
-    height: 150px;
-    top: 35%;
+
 }
 
 .loading .lottie-txt{
@@ -212,7 +210,7 @@ label {
 .contents.start {
     position: relative;
     overflow-x: hidden; /* 벚꽃이 해당 영역 벗어나지 못하도록*/
-    padding-top: 70px;
+    /*padding-top: 70px;*/
     text-align: center;
     /* background-color: #fff; */
 }
@@ -226,7 +224,7 @@ label {
     position: relative
 }
 
-/* .contents.start .img-cnt .gradient{
+ .contents.start .img-cnt .gradient{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -234,7 +232,7 @@ label {
     background-image: url("../images/gradient.png");
     width: 100%;
     height: 165px;
-} */
+}
 
 .contents.start .main-tit {
     width: 100%;
@@ -287,7 +285,7 @@ label {
 .contents.invitation {
     text-align: center;
     padding: 70px 0;
-    /* background-color: #fff; */
+    background-color: #fff;
 }
 
 .contents.invitation .txt-cnt {
