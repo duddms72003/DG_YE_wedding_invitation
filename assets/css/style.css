@@ -116,26 +116,23 @@ label {
     touch-action:none;
 }
 
-.loading_wapper{
-
+.loading .lottie-player,
+.loading .lottie-txt{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.lottie-player {
+.loading .lottie-player {
     width: 150px;
     height: 150px;
-    position: absolute;
     top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.loading_wapper .lottie-txt{
+.loading .lottie-txt{
     width: 100%;
-    position: absolute;
-    top: 51%;
-    left: 50%;
-    transform: translateX(-50%);
-
+    top: 52%;
+    text-align: center;
 }
 
 
