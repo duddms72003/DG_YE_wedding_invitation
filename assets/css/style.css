@@ -113,21 +113,29 @@ label {
     top: 0;
     background-color: #fff;
     z-index: 1000;
+    touch-action:none;
 }
 
 .loading_wapper{
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 100vh;
-    overflow: hidden;
+
+}
+
+.lottie-player {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .loading_wapper .lottie-txt{
+    width: 100%;
     position: absolute;
-     top: 54%; 
-     left: 50%; 
-     transform: translateX(-50%);
+    top: 51%;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 
