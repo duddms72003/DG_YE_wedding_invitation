@@ -26,8 +26,8 @@
 
 <div class="loading">
   <div class="loading_wapper">
-    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_rc6evhf4.json" style=" width: 150px; height: 150px;" speed="1" loop autoplay class="lottie-player"></lottie-player>
-    <div class="lottie-txt" style="text-align: center;">동근 &#9829; 영은</div>
+    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_rc6evhf4.json" style=" width: 150px; height: 150px; position: absolute; top: 35%; left: 50%; transform: translateX(-50%);" speed="1" loop autoplay class="lottie-player"></lottie-player>
+    <div class="lottie-txt">동근 &#9829; 영은</div>
   </div>
 </div>
 
@@ -42,7 +42,7 @@
     </div>
 
     <section class="contents start">
-      <div class="txt-cnt">
+<!--      <div class="txt-cnt">
         <p class="main-tit">시</p>
         <p class="main-tit">작</p>
         <p class="info">2022년 10월 22일 토요일 오전 11시 20분</p>
@@ -51,10 +51,10 @@
           <strong class="dot">·</strong>
           <span>조영은</span>
         </p>
-      </div>
+      </div>-->
       <div class="img-cnt">
         <img src="./assets/images/b4one/b4one1.jpg" alt="">
-        <!-- <div class="gradient"></div> -->
+         <div class="gradient"></div>
       </div>
     </section>
 
@@ -765,18 +765,18 @@
 
   window.onload = function (e) {
     e.preventDefault();
-    function scrollDisable(){
+ /*   function scrollDisable(){
       $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
         e.preventDefault();
       });
     }
     function scrollAble(){
       $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
-    }
+    }*/
 
     setTimeout(function (){
-      scrollDisable();
-      scrollAble();
+      /*scrollDisable();
+      scrollAble();*/
       $(".loading").fadeOut();
     }, 2000);
 
