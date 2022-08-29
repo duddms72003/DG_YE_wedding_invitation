@@ -17,7 +17,7 @@
   <!-- inject:dependency:js -->
   <script src="./assets/vendors/jquery/jquery-3.5.1.min.js"></script>
   <script src="./assets/vendors/swiper/swiper.min.js"></script>
-
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ujgiwd490s"></script>
   <!-- endinject -->
 
 
@@ -289,7 +289,8 @@
       </div>
       <div class="map">
         <div class="img-cnt">
-          <img src="./assets/images/location.png" alt="">
+          <div id="map" style="width:100%;height:400px;"></div>
+          <!--          <img src="./assets/images/location.png" alt="">-->
         </div>
         <div class="map-icons-cnt">
           <div class="map-icon">
@@ -769,31 +770,36 @@
 
 
 
-  window.onload = function (e) {
-    e.preventDefault();
- /*   function scrollDisable(){
-      $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
-        e.preventDefault();
-      });
+
+
+
+
+    window.onload = function (e) {
+      e.preventDefault();
+
+
+      /* 지도 */
+      var mapOptions = {
+        center: new naver.maps.LatLng(37.3595704, 127.105399),
+        zoom: 10
+      };
+
+      var map = new naver.maps.Map('map', mapOptions);
+      /* 지도 */
+
+
+      setTimeout(function (){
+        /*scrollDisable();
+        scrollAble();*/
+        $(".loading").fadeOut();
+      }, 2000);
+
+      $('body').sakura();
+      document.addEventListener('scroll', function (){
+        showIt();
+        // alert(2);
+      })
     }
-    function scrollAble(){
-      $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
-    }*/
-
-    setTimeout(function (){
-      /*scrollDisable();
-      scrollAble();*/
-      $(".loading").fadeOut();
-    }, 2000);
-
-    $('body').sakura();
-    document.addEventListener('scroll', function (){
-      showIt();
-      // alert(2);
-    })
-  }
-
-
 
 
 
