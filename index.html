@@ -752,7 +752,7 @@
   </div>
   <footer class="footer">
     <div class="contents">
-      <p>Made by 신부 <span>&#129392;</span></p>
+      <p>Made by 영은 <span>&#129392;</span></p>
     </div>
   </footer>
 </div>
@@ -778,13 +778,6 @@
 
 
       /* 지도 */
-    /*  var mapOptions = {
-        center: new naver.maps.LatLng(37.3595704, 127.105399),
-        zoom: 10
-      };*/
-
-      // var map = new naver.maps.Map('map', mapOptions);
-
       var map = new naver.maps.Map('map', {
         center: new naver.maps.LatLng(37.5671145, 126.8268941),
         zoom: 16
@@ -794,14 +787,10 @@
         position: new naver.maps.LatLng(37.5671145, 126.8268941),
         map: map
       });
-
-
       /* 지도 */
 
 
       setTimeout(function (){
-        /*scrollDisable();
-        scrollAble();*/
         $(".loading").fadeOut();
       }, 2000);
 
