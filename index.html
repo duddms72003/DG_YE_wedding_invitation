@@ -290,7 +290,6 @@
       <div class="map">
         <div class="img-cnt">
           <div id="map" style="width:100%;height:400px;"></div>
-          <!--          <img src="./assets/images/location.png" alt="">-->
         </div>
         <div class="map-icons-cnt">
           <div class="map-icon">
@@ -779,22 +778,24 @@
 
 
       /* 지도 */
-      var mapOptions = {
+    /*  var mapOptions = {
         center: new naver.maps.LatLng(37.3595704, 127.105399),
         zoom: 10
-      };
+      };*/
 
       // var map = new naver.maps.Map('map', mapOptions);
 
       var map = new naver.maps.Map('map', {
         center: new naver.maps.LatLng(37.5671145, 126.8268941),
-        zoom: 15
+        zoom: 10
       });
 
       var marker = new naver.maps.Marker({
         position: new naver.maps.LatLng(37.5671145, 126.8268941),
         map: map
       });
+
+
       /* 지도 */
 
 
