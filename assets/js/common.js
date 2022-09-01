@@ -828,7 +828,9 @@ function showIt() {
 
 
 
-const imageElement = document.querySelectorAll(".img");
+
+/* 이미지만 두 손가락으로 확대 기능 */
+const imageElement = document.querySelector(".img");
 
 const pinchZoom = (imageElement) => {
   let imageElementScale = 1;
