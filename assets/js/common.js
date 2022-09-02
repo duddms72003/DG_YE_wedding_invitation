@@ -830,6 +830,8 @@ function showIt() {
 
 
 /* 이미지만 두 손가락으로 확대 기능 */
+
+/*
 const imageElement = document.querySelector(".img");
 
 const pinchZoom = (imageElement) => {
@@ -891,3 +893,4 @@ const pinchZoom = (imageElement) => {
     imageElement.style.zIndex = "";
   });
 }
+*/
